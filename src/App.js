@@ -1,8 +1,10 @@
 import './App.css';
 import Header from './components/organism/Header.js';
 import MenuNav from './components/organism/MenuNav.js';
+import Navbar from './components/organism/Navbar';
 import imgF from './img/bg-homepage.PNG';
 import imgP from './img/PhotoDeProfile.PNG';
+
 function App() {
   return (
     <div id="wrapper" className="App flex flex-col my-0 mx-auto">
@@ -17,7 +19,7 @@ function App() {
         },
       }} />
 
-      <MenuNav data={[
+      <Navbar data={[
         {
           name:"Accueil",
           value:"home"
