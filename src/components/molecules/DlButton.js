@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
-import Title from '../atoms/title';
+import Title from '../atoms/Title.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons/';
 export const DlButton = ({ data, ...props }) => {

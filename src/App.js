@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './components/organism/Header.js';
-import MenuNav from './components/organism/MenuNav.js';
 import Navbar from './components/organism/Navbar';
 import imgF from './img/bg-homepage.PNG';
 import imgP from './img/PhotoDeProfile.PNG';
-
+import Main from './components/organism/Main.js';
+import Footer from './components/organism/Footer.js'
 function App() {
   return (
     <div id="wrapper" className="App flex flex-col my-0 mx-auto">
@@ -29,6 +29,10 @@ function App() {
           value:"info"
         },
         {
+          name:"Mon Parcours",
+          value:"course"
+        },
+        {
           name:"Compétence",
           value:"skill"
         },
@@ -42,6 +46,91 @@ function App() {
         },
       ]} />
 
+      <Main data={[
+        {
+          title:"Présentation",
+          value:"info",
+          id: 0,
+          dataSlide:{
+            imgSlide: imgP,
+            textSlide:[
+              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt",
+              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt",
+              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
+            ]
+          } 
+        },
+        {
+          title:"Mon Parcours",
+          value:"course",
+          id: 1,
+          dataSection:{
+            xp:[{
+              title: "title xp",
+              date: "2020",
+              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
+            },
+            {
+              title: "title xp",
+              date: "2021",
+              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
+            },
+            {
+              title: "title xp",
+              date: "2019",
+              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
+            }
+          ]
+          }
+        },
+        {
+          title:"Compétence",
+          value:"skill",
+          id: 2,
+          dataSkill:[
+              {
+                imgSkill: {
+                  src: imgP, 
+                  alt:"exemple alt"
+                },
+                desc:"ferferferferfr fre fre fre fre "
+              },
+              {
+                imgSkill: {
+                  src: imgP, 
+                  alt:"exemple alt"
+                },
+                desc:"ferferferferfr fre fre fre fre "
+              },
+              {
+                imgSkill: {
+                  src: imgP, 
+                  alt:"exemple alt"
+                },
+                desc:"ferferferferfr fre fre fre fre "
+              },
+          ]
+        },
+        {
+          title:"Objectif",
+          value:"goal",
+          id: 3,
+          dataSlide:{
+            imgSlide: imgP,
+            textSlide: "glfdgdfgfdgfdgfddgsertgt trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
+          }
+        },
+        {
+          title:"Contact",
+          value:"contact",
+          id: 4,
+          dataSlide:{
+            imgSlide: imgP,
+            textSlide: "glfdgdfgfdgfdgfddgsertgt trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
+          }
+        },
+      ]}/>
+      <Footer />
     </div>
   );
 }

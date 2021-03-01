@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import RightNav from '../organism/RightNav.jsx';
 
 const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+  height: 2.5rem;
   position: fixed;
-  top: 15px;
-  right: 20px;
+  top: 8px;
+  right: 10px;
   z-index: 20;
   display: none;
-
+  background-color: rgba(239, 68, 68); 
+  padding: 6px;
+  border-radius: 5px;
   @media (max-width: 1024px) {
     display: flex;
     justify-content: space-around;

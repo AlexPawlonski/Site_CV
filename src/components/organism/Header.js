@@ -2,21 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
 import ImgProfil from '../atoms/ImgProfil.js';
-import Title from '../atoms/title.js';
+import Title from '../atoms/Title.js';
 import DlButton from '../molecules/DlButton.js'
 export const Header = ({ data , ...props }) => {
 
   var sectionStyle = {
     width: "100%",
     backgroundImage: `url(${data.bgImg})`,
+    minHeight: "800px"
   };
   
   return (
-    <header style={sectionStyle} className="md:bg-cover lg:h-screen bg-no-repeat">
+    <header id="home" style={sectionStyle} className="md:bg-cover h-screen bg-no-repeat">
       <div className="float-left m-2">
         <DlButton data="Télécharger le VC"/>
       </div>
-      <div className="mt-80 lg:mt-96 flex flex-col justify-center items-center">
+      <div className="mt-96 flex flex-col justify-center items-center">
         <ImgProfil PImg={data.ProfilImg} />
         <Title type="h1" data="PAWLONSKI Alex"/>
         <Title type="h2" data="Développeur WEB"/>
@@ -31,4 +32,4 @@ Header.propTypes = {
 Header.defaultProps = {
   
 };
-export default Header;
+export default Header; 
