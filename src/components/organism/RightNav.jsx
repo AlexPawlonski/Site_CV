@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Cell from '../atoms/Cell.js'
 const Ul = styled.ul`
+  z-index: 200;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -12,8 +13,6 @@ const Ul = styled.ul`
     padding: 10px 10px;
     color: #fff;
   }
-
-  @media (max-width: 1024px) {
     flex-flow: column nowrap;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
@@ -23,7 +22,6 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-  }
 `;
 
 const RightNav = ({ open, data, ...props}) => {

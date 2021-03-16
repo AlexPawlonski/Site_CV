@@ -8,7 +8,7 @@ export const Pannel = ({ data , ...props }) => {
  switch (data.id) {
    case 0:
      return(
-         <Info data={data}/>
+      <Info data={data}/>
      );
      break;
    case 1:

@@ -3,18 +3,25 @@ import Header from './components/organism/Header.js';
 import Navbar from './components/organism/Navbar';
 import imgF from './img/bg-homepage.PNG';
 import imgP from './img/PhotoDeProfile.PNG';
+import imgPP from './img/PhotoDeProfile_Blank.PNG';
+import fondImg from './img/fondRose.jpg';
 import Main from './components/organism/Main.js';
-import Footer from './components/organism/Footer.js'
+import Footer from './components/organism/Footer.js';
 function App() {
+
+  var sectionStyle = {
+    backgroundImage: `url(${fondImg})`,
+  };
+
   return (
-    <div id="wrapper" className="App flex flex-col my-0 mx-auto">
+    <div id="wrapper" style={sectionStyle} className="App flex flex-col my-0 mx-auto bg-fixed bg-cover">
 
       <Header data={{
         name: "Pawlonski",
         surname: "Alex",
         bgImg: imgF,
         ProfilImg: {
-          src: imgP,
+          src: imgPP,
           alt: 'photoProfil',
         },
       }} />
@@ -50,6 +57,7 @@ function App() {
         {
           title:"Présentation",
           value:"info",
+          color: "red",
           id: 0,
           dataSlide:{
             imgSlide: imgP,
@@ -68,24 +76,16 @@ function App() {
             xp:[{
               title: "title xp",
               date: "2020",
-              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
+              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry ",
+              img: imgP,
             },
-            {
-              title: "title xp",
-              date: "2021",
-              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
-            },
-            {
-              title: "title xp",
-              date: "2019",
-              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry "
-            }
           ]
           }
         },
         {
           title:"Compétence",
           value:"skill",
+          color: "blue",
           id: 2,
           dataSkill:[
               {
@@ -95,20 +95,7 @@ function App() {
                 },
                 desc:"ferferferferfr fre fre fre fre "
               },
-              {
-                imgSkill: {
-                  src: imgP, 
-                  alt:"exemple alt"
-                },
-                desc:"ferferferferfr fre fre fre fre "
-              },
-              {
-                imgSkill: {
-                  src: imgP, 
-                  alt:"exemple alt"
-                },
-                desc:"ferferferferfr fre fre fre fre "
-              },
+             
           ]
         },
         {
@@ -123,6 +110,7 @@ function App() {
         {
           title:"Contact",
           value:"contact",
+          color: "white",
           id: 4,
           dataSlide:{
             imgSlide: imgP,

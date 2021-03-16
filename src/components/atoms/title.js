@@ -17,6 +17,16 @@ export const Title = ({ type, data, ...props }) => {
         <h2 className="text-red-500 font-bold">{data}</h2>
       );
       break;
+    case "h2-w":
+      return(
+        <h2 className="text-white font-bold">{data}</h2>
+      );
+      break;
+    case "h2-b":
+      return(
+        <h2 className="text-black font-bold">{data}</h2>
+      );
+      break;
     case "h3":
       return(
         <h3>{data}</h3>

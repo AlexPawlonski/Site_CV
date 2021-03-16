@@ -4,14 +4,32 @@ import Title from '../atoms/Title.js'
 export const Main = ({ data , ...props }) => {
   const Data = data;
   return(
-    <div id="main" className="flex flex-col w-full self-center px-3 pt-4">
-       {Data.map(data =>
-          <section className="h-screen w-full" style={{minHeight: "500px"}} id={data.value}>
-              <div className="w-full border-gray-300 border-b-4 text-2xl">
-                <Title type="h2" data={data.title}/>
-              </div>
-              <Pannel data={data}/>
-          </section>
+    <div id="main" className="flex flex-col w-full self-center pt-4">
+       {Data.map(function(data){  
+         var sectionStyle = null;
+          switch (data.color) {
+            case 'red':
+              sectionStyle={backgroundColor: 'rgba(239, 68, 68)'}
+              break;
+            case 'blue':
+              sectionStyle={backgroundColor: ' rgba(139, 92, 246)'}
+              break;
+            case 'white':
+              sectionStyle={backgroundColor: '#fff'}
+              break;
+          
+            default:
+              break;
+          }
+          return (
+            <section className=" w-full flex flex-col items-center h-screen" style={sectionStyle}>
+                <div id={data.value} className="w-2/6 text-center bg-white p-1 transform -translate-y-4 z-0 rounded-xl">
+                  <Title type="h2-b" data={data.title}/>
+                </div>
+                <Pannel data={data}/>
+            </section>
+          )
+        } 
        )}
     </div>
   )
