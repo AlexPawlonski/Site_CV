@@ -13,14 +13,14 @@ export const Header = ({ data , ...props }) => {
   };
   
   return (
-    <header id="home" style={sectionStyle} className="md:bg-cover h-screen bg-no-repeat">
+    <header id="home" style={sectionStyle} className="md:bg-cover h-screen mb-20 bg-no-repeat">
       <div className="float-left m-2 fixed">
         <DlButton data="Télécharger le VC"/>
       </div>
       <div className="mt-96 flex flex-col justify-center items-center">
         <ImgProfil PImg={data.ProfilImg} />
-        <Title type="h1" data="PAWLONSKI Alex"/>
-        <Title type="h2" data="Développeur WEB"/>
+        <Title type="h1-w" data={data.name}/>
+        <Title type="h2-b" data={data.subTitle}/>
       </div>
     </header>
   );

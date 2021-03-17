@@ -17,8 +17,8 @@ function App() {
     <div id="wrapper" style={sectionStyle} className="App flex flex-col my-0 mx-auto bg-fixed bg-cover">
 
       <Header data={{
-        name: "Pawlonski",
-        surname: "Alex",
+        name: "Alex Pawlonski",
+        subTitle: "Développeur WEB",
         bgImg: imgF,
         ProfilImg: {
           src: imgPP,
@@ -62,9 +62,18 @@ function App() {
           dataSlide:{
             imgSlide: imgP,
             textSlide:[
-              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt",
-              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt",
-              "glfdgdfgfdgfdgfddgsertgt trgetrezgrtgft:h trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
+              {
+                title: 'lorem fds free fzre',
+                text: 'drgtrzgtrg zrtg rtge trgrzetgrtg rtgertg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+              },
+              {
+                title: 'lorem fds free',
+                text: 'drgtrzgtrg zrtg rtge trgertg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+              }, 
+              {
+                title: 'lorem fds',
+                text: 'drgtrzgtrg zrtg rtge trgg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+              } 
             ]
           } 
         },
