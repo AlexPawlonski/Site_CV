@@ -93,6 +93,17 @@ function App() {
               map: " 6 rue des map 49220 Angers",
               desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry ",
               link: "https//// th trhe htr ehtr ehtr ert",
+            },{ 
+              imgXp: {
+                src: imgP, 
+                alt:"exemple alt"
+              },
+              type: "Formation",
+              title: "title xp",
+              date: "2021",
+              map: " 6 rue des map 49220 Angers",
+              desc: "description fdg rd gfd  e tyrteyr tyry ",
+              link: "https//// th trhe htr ehtr ehtr ert",
             },
           ]
           }
@@ -103,14 +114,57 @@ function App() {
           color: "blue",
           id: 2,
           dataSkill:[
-              {
-                imgSkill: {
-                  src: imgP, 
-                  alt:"exemple alt"
+             {
+               titlesection: "Domaines de compétences",
+               liste: [
+                 {
+                   title: "gestion  projet",
+                   listeSkill: "test, vlabla, reza , re rez e, etretzerztre, treztrez ,ert ertertertz",
+                 },
+                 {
+                   title: " de projet",
+                   listeSkill: "test, vlabla, reza , re rez e, treztrez ,ert ertertertz",
+                 },
+                 {
+                   title: "gestion de ",
+                   listeSkill: "test, vlabla, , etretzerztre, treztrez ,ert ertertertz",
+                 }
+               ]
+             },
+             {
+              titlesection: "Compétence en développement",
+              SkillLevel: [
+                {
+                  title: "js react",
+                  lvl : 4, 
                 },
-                desc:"ferferferferfr fre fre fre fre "
-              },
-             
+                {
+                  title: "js ajax",
+                  lvl : 3, 
+                },
+                {
+                  title: "js html",
+                  lvl : 6, 
+                },
+              ]
+             },
+             {
+              titlesection: "Compétences en conception graphique",
+              SkillLevel: [
+                {
+                  title: "photoshop",
+                  lvl : 10, 
+                },
+                {
+                  title: "première pro",
+                  lvl : 8, 
+                },
+                {
+                  title: "clip studio paint",
+                  lvl : 6, 
+                },
+              ]
+             },
           ]
         },
         {

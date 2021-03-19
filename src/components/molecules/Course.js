@@ -10,7 +10,7 @@ export const Course = ({ data , ...props }) => {
   let xp = data.dataSection.xp;
 return(
   <div>
-    {xp.map( data => <div className="bg-white rounded-lg p-4 pt-1">
+    {xp.map( data => <div className="bg-white rounded-lg p-4 pt-1 my-2">
       <div className="mb-2">
         <Title type="h2-b" data={data.type}/>
       </div>

@@ -1,11 +1,10 @@
 import React from 'react';
 import PannelSkill from './PannelSkill.js';
 export const Skill = ({ data , ...props }) => {
-  let panelleSkill = data.dataSkill
-  console.log(panelleSkill);
+  console.log(data);
 return(
   <div>
-    {panelleSkill.map( data => <PannelSkill data={data} />)}
+    {data.dataSkill.map( data => <PannelSkill data={data}/>)}
   </div>
 )
 }
