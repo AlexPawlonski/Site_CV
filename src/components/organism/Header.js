@@ -14,7 +14,7 @@ export const Header = ({ data , ...props }) => {
   
   return (
     <header id="home" style={sectionStyle} className="md:bg-cover h-screen mb-20 bg-no-repeat">
-      <div className="float-left m-2 fixed">
+      <div className="float-left m-2 " style={{zIndex:"200"}}>
         <DlButton data="Télécharger le VC"/>
       </div>
       <div className="mt-96 flex flex-col justify-center items-center">

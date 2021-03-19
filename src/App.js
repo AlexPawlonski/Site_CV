@@ -36,7 +36,7 @@ function App() {
           value:"info"
         },
         {
-          name:"Mon Parcours",
+          name:"Mon Parcours et expérience",
           value:"course"
         },
         {
@@ -78,15 +78,20 @@ function App() {
           } 
         },
         {
-          title:"Mon Parcours",
+          title:"Mon Parcours et expérience",
           value:"course",
           id: 1,
           dataSection:{
-            xp:[{
+            xp:[{ 
+              imgXp: {
+                src: imgP, 
+                alt:"exemple alt"
+              },
               title: "title xp",
               date: "2020",
+              map: " 6 rue des map 49220 Angers",
               desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry ",
-              img: imgP,
+              link: "https//// th trhe htr ehtr ehtr ert",
             },
           ]
           }
