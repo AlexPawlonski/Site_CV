@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const Description = ({ data, ...props }) => {
   return(
-    <div>
+    <div className="border-t-2 border">
       <p>{data}</p>
     </div>
   )

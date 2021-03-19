@@ -87,6 +87,7 @@ function App() {
                 src: imgP, 
                 alt:"exemple alt"
               },
+              type: "Formation / Experience",
               title: "title xp",
               date: "2020",
               map: " 6 rue des map 49220 Angers",

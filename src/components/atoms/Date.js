@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 
 export const Date = ({ data, ...props }) => {
   return(
-    <p>{data}</p>
+    <p className="font-bold">{data}</p>
   )
 };
 

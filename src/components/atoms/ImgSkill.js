@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 
 export const ImgSkill = ({ data, ...props }) => {
   return(
-    <img className="w-20" src={data.src} alt={data.alt}/>
+    <img style={{minWidth:"50px", maxWidth:"100px",minHeight:"50px", maxHeight:"100px"}} src={data.src} alt={data.alt}/>
   )
 };
 
