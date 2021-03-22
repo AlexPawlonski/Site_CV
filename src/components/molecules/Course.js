@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../atoms/Title.js'
 import Date from '../atoms/Date.js'
-import ImgSkill from '../atoms/ImgSkill.js';
+import ImgXp from '../atoms/ImgXp.js';
 import Description from './Description.js';
 import Localisation from '../atoms/Localisation.js';
 
@@ -15,7 +15,7 @@ return(
         <Title type="h2-b" data={data.type}/>
       </div>
       <div className="flex">
-        <ImgSkill data={data.imgXp}/>
+        <ImgXp data={data.imgXp}/>
         <div className="ml-3">
           <Title type="h2" data={data.title}/>
           <div>

@@ -133,34 +133,58 @@ function App() {
              },
              {
               titlesection: "Compétence en développement",
-              SkillLevel: [
+              skillLevel: [
                 {
                   title: "js react",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 4, 
                 },
                 {
                   title: "js ajax",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 3, 
                 },
                 {
                   title: "js html",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 6, 
                 },
               ]
              },
              {
               titlesection: "Compétences en conception graphique",
-              SkillLevel: [
+              skillLevel: [
                 {
                   title: "photoshop",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 10, 
                 },
                 {
                   title: "première pro",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 8, 
                 },
                 {
                   title: "clip studio paint",
+                  imgSkill: {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
                   lvl : 6, 
                 },
               ]
