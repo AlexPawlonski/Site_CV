@@ -10,16 +10,22 @@ export const Course = ({ data , ...props }) => {
   let xp = data.dataSection.xp;
 return(
   <div>
-    {xp.map( data => <div className="bg-white rounded-lg p-6 flex">
-      <ImgSkill data={data.imgXp}/>
-      <div>
-        <Title type="h2" data={data.title}/>
-        <div>
-          <Date data={data.date}/>
-          <Localisation data={data.map}/>
-          <Description data={data.desc}/>                                                        
+    {xp.map( data => <div className="bg-white rounded-lg p-4 pt-1 my-2">
+      <div className="mb-2">
+        <Title type="h2-b" data={data.type}/>
+      </div>
+      <div className="flex">
+        <ImgSkill data={data.imgXp}/>
+        <div className="ml-3">
+          <Title type="h2" data={data.title}/>
+          <div>
+            <Date data={data.date}/>
+            <Localisation data={data.map}/>
+                                                                   
+          </div>
         </div>
       </div>
+      <Description data={data.desc}/> 
     </div>)}
   </div>
 )

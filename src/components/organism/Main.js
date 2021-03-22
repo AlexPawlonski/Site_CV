@@ -23,7 +23,7 @@ export const Main = ({ data , ...props }) => {
           }
 
           return (
-            <section className=" w-full flex flex-col items-center h-screen transform -skew-y-5 " style={sectionStyle}>
+            <section className=" w-full flex flex-col items-center transform -skew-y-5 mb-5" style={sectionStyle}>
                 <div className="transform skew-y-5 flex flex-col items-center w-full">
                   <div id={data.value} className="px-4 md:w-2/6 text-center bg-white p-1 transform -translate-y-4 z-0 rounded-md">
                     <Title type="h2-b" data={data.title}/>
