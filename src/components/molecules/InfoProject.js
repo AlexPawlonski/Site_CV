@@ -28,7 +28,7 @@ export const InfoProject = ({ data , fClosePopUp, ...props }) => {
 
 if (data) {
     return(
-        <div className="bg-white my-2 w-full">
+        <div className="bg-white my-2 w-full rounded-lg">
             <div className="flex justify-between">
                 <div className="mx-2 items-center flex ">
                     <Title type="h2" data={data.title}/>

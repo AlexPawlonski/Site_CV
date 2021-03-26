@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import Img from '../atoms/Img.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'

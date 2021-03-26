@@ -29,6 +29,11 @@ export const Img = ({ data, type, ...props }) => {
         <img src={data.src} alt={data.alt} style={{}} className="w-full"/>
       );
       break;
+    case "logo":
+      return(
+        <img src={data.src} alt={data.alt} style={{}} className="w-12 m-2"/>
+      );
+      break;
     default:
         <p>enter a type and value</p>
       break;

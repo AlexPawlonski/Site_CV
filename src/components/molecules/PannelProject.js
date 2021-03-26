@@ -6,7 +6,7 @@ import Img from '../atoms/Img.js';
 export const PannelProject = ({ data , fInfoPopUp, ...props }) => {
 
 return(
-    <div onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-md transform hover:scale-105 duration-100 cursor-pointer">
+    <div onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-lg transform hover:scale-105 duration-100 cursor-pointer">
         <div>
             <Img type="project" data={data.img}/>
         </div>

@@ -286,9 +286,39 @@ function App() {
           value:"contact",
           color: "white",
           id: 4,
-          dataSlide:{
-            imgSlide: imgP,
-            textSlide: "glfdgdfgfdgfdgfddgsertgt trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
+          data:{
+            dataLink:{
+              title: "Réseaux cosiaux",
+              data: [
+                {
+                  logo: {
+                    src: imgP, 
+                    alt:"exempl"
+                  }, 
+                  link:{
+                    url: "https:///",
+                    value: "link ver le réseaux"
+                  }
+                },
+                {
+                  logo: {
+                    src: imgP,
+                    alt:"exempl"
+                  }, 
+                  link:{
+                    url: "https:///",
+                    value: "link réseaux"
+                  }
+                },
+              ]
+            },
+            dataContact: {
+              title: "Contact",
+              data: {
+                phone: "0626079610",
+                mail: "apawlonski8@gmail.com",
+                },
+            },
           }
         },
       ]}/>
