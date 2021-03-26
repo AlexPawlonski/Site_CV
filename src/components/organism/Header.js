@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
-import ImgProfil from '../atoms/ImgProfil.js';
+import Img from '../atoms/Img.js';
 import Title from '../atoms/Title.js';
 import DlButton from '../molecules/DlButton.js'
 export const Header = ({ data , ...props }) => {
@@ -18,7 +17,7 @@ export const Header = ({ data , ...props }) => {
         <DlButton data="Télécharger le VC"/>
       </div>
       <div className="mt-96 flex flex-col justify-center items-center">
-        <ImgProfil PImg={data.ProfilImg} />
+        <Img type="user" data={data.ProfilImg} />
         <Title type="h1-w" data={data.name}/>
         <Title type="h2-b" data={data.subTitle}/>
       </div>

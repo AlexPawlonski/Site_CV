@@ -44,8 +44,8 @@ function App() {
           value:"skill"
         },
         {
-          name:"Objectif",
-          value:"goal"
+          name:"Mes réalisation",
+          value:"portfolio"
         },
         {
           name:"Contact",
@@ -113,8 +113,8 @@ function App() {
           value:"skill",
           color: "blue",
           id: 2,
-          dataSkill:[
-             {
+          dataSkill:{
+             pannelSkill :{
                titlesection: "Domaines de compétences",
                liste: [
                  {
@@ -131,7 +131,7 @@ function App() {
                  }
                ]
              },
-             {
+             pannelLvl: [{
               titlesection: "Compétence en développement",
               skillLevel: [
                 {
@@ -159,8 +159,7 @@ function App() {
                   lvl : 6, 
                 },
               ]
-             },
-             {
+             },{
               titlesection: "Compétences en conception graphique",
               skillLevel: [
                 {
@@ -169,7 +168,7 @@ function App() {
                     src: imgP, 
                     alt:"exemple alt"
                   },
-                  lvl : 10, 
+                  lvl : 5, 
                 },
                 {
                   title: "première pro",
@@ -189,16 +188,98 @@ function App() {
                 },
               ]
              },
-          ]
+             ]
+            }
         },
         {
-          title:"Objectif",
-          value:"goal",
+          title:"Mes Réalisation",
+          value:"portfolio",
           id: 3,
-          dataSlide:{
-            imgSlide: imgP,
-            textSlide: "glfdgdfgfdgfdgfddgsertgt trehtrel trh letrhlrehletrlhrthl trhlrtl lhj thrltehrtl lt"
-          }
+          pannelProject:[
+            {
+              title: "name Project",
+              subTitle: "type",
+              img: {
+                src: imgP, 
+                alt:"exemple alt"
+              },
+              dataProject: {
+                carouselImg: [
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                ],
+                author: "Alex Pawlonski",
+                client: "entreprise",
+                date:"date",
+                desc: "vfz vfr vfrz dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["css", "html", "JS"],
+                framWork: ["react", "Meteor"],
+                tabWork: ['traveaux 1','traveaux 1','traveaux 1','traveaux 1',],
+                link: {
+                  linkWebSite: {
+                    value:"lien site web", 
+                    src: "https:",
+                  },
+                  linkAuthor: {
+                    value:"lien site web", 
+                    src: "https:",
+                  },
+              }
+              }
+            },
+            {
+              title: "name ",
+              subTitle: "type",
+              img: {
+                src: imgP, 
+                alt:"exempl"
+              },
+              dataProject: {
+                carouselImg: [
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                  {
+                    src: imgP, 
+                    alt:"exemple alt"
+                  },
+                ],
+                author: "Alex Pawlonski",
+                client: "entreprise",
+                date:"date",
+                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["css", "html", "JS"],
+                cms: ["css", "html", "JS"],
+                framWork: ["react", "Meteor"],
+                tabWork: [' 1','traveaux 1','traveaux 1','traveaux 1',],
+                link: {
+                    linkWebSite: {
+                      value:"lien site web", 
+                      src: "https:",
+                    },
+                    linkAuthor: {
+                      value:"lien site web", 
+                      src: "https:",
+                    },
+                }
+              }
+            },
+          ],
         },
         {
           title:"Contact",

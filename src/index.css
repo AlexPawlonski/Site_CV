@@ -22,3 +22,16 @@ code {
 .skew-y-5 {
   --tw-skew-y: 5deg;
 }
+
+.arrow{
+  width: 35px;
+  height: 25px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}

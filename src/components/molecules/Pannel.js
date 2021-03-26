@@ -1,7 +1,7 @@
 import React from 'react';
 import Info from './Info.js';
 import Skill from './Skill.js';
-import Goal from './Goal.js';
+import Portfolio from './Portfolio.js';
 import Contact from './Contact.js';
 import Course from './Course.js'
 export const Pannel = ({ data , ...props }) => {
@@ -23,7 +23,7 @@ export const Pannel = ({ data , ...props }) => {
      break;
    case 3:
      return(
-      <Goal data={data}/>
+      <Portfolio data={data}/>
      );
      break;
    case 4:
