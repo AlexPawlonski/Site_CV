@@ -322,7 +322,20 @@ function App() {
           }
         },
       ]}/>
-      <Footer />
+      <Footer data={{
+        logo: {
+          src: imgP, 
+          alt:"exempl"
+        },
+        info: {
+          title: "Développeur web junior en recherche d'emploi",
+          text: "fgregregrezgerz rtetzgrtez retkerztykezrktkert kertk zerktkerztkerztk ezrkt kerztkertkerktkzertkekzrtk zert",
+        }, 
+        name: "Alex PAWLONSKI",
+        location: "35 bis rue d'anjou 49220 Erdre en anjou",
+        phone: "0626079610",
+        mail: "apawlonski8@gmail.com"
+      }} />
     </div>
   );
 }
