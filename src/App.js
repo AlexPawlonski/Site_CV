@@ -1,12 +1,51 @@
 import './App.css';
+
+/*IMPORT IMG*/
+import imgConginWeb from './img/imgEx/CW.png';
+import imgBlaisePascal from './img/imgEx/BlaisePascal.png';
+import imgcefii from './img/imgEx/cefii.png';
+
+import imgreact from './img/imgTech/dev/react.png';
+import imgmeteor from './img/imgTech/dev/meteor.png';
+import imgangular from './img/imgTech/dev/angular.png';
+import imgwordpress from './img/imgTech/dev/wordPress.png';
+
+import imgcss from './img/imgTech/dev/css.png';
+import imghtml from './img/imgTech/dev/html.png';
+import imgJS from './img/imgTech/dev/JS.png';
+
+import imgjquery from './img/imgTech/dev/jquery.png';
+import imgmysql from './img/imgTech/dev/mysql.png';
+import imgphp from './img/imgTech/dev/php.png';
+import imgmongodb from './img/imgTech/dev/mongodb.png';
+import imgpoo from './img/imgTech/dev/poo.png';
+import imgtailwind from './img/imgTech/dev/tailwindcss.png';
+import imgbootstrap from './img/imgTech/dev/bootstrap.png';
+import imgajax from './img/imgTech/dev/ajax.png';
+
+import imgphotoshop from './img/imgTech/design/PhotoShop.png';
+import imgPremière from './img/imgTech/design/Première.png';
+import imgobs from './img/imgTech/design/obs.png';
+
+
+/**import img fond-PP */
+import imgFondHeader from './img/imgFond/bg-homepage.PNG';
+import fondImg from './img/imgFond/fondRose.jpg';
+
+import imgP from './img/PhotoDeProfile.PNG';
+
+import logo from './img/logo/logo.png';
+import logoW from './img/logo/logo-w.png';
+
+/*IMPORT COMPONENT*/ 
 import Header from './components/organism/Header.js';
 import Navbar from './components/organism/Navbar';
-import imgF from './img/bg-homepage.PNG';
-import imgP from './img/PhotoDeProfile.PNG';
-import imgPP from './img/PhotoDeProfile_Blank.PNG';
-import fondImg from './img/fondRose.jpg';
 import Main from './components/organism/Main.js';
 import Footer from './components/organism/Footer.js';
+
+
+
+
 function App() {
 
   var sectionStyle = {
@@ -18,10 +57,10 @@ function App() {
 
       <Header data={{
         name: "Alex Pawlonski",
-        subTitle: "Développeur WEB",
-        bgImg: imgF,
+        subTitle: "Développeur junior WEB / WEB-MODILE",
+        bgImg: imgFondHeader,
         ProfilImg: {
-          src: imgPP,
+          src: imgP,
           alt: 'photoProfil',
         },
       }} />
@@ -60,19 +99,19 @@ function App() {
           color: "red",
           id: 0,
           dataSlide:{
-            imgSlide: imgP,
+            imgSlide: logo,
             textSlide:[
               {
-                title: 'lorem fds free fzre',
-                text: 'drgtrzgtrg zrtg rtge trgrzetgrtg rtgertg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+                title: 'PASSIONÉ',
+                text: 'Depuis mon enfance je suis passionné par les nouvelles technologies et l\'informatique et depuis peu par le développement mais aussi la réalité virtuelle.  un domaine dans lequel j\'aimerais travailler dans le futur.'
               },
               {
-                title: 'lorem fds free',
-                text: 'drgtrzgtrg zrtg rtge trgertg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+                title: 'CURIEUX',
+                text: 'Je pense que pour un développeur,  le trait de caractère le plus important est la curiosité.  Car elle permet de développer ses compétences, mais aussi de proposer un travail toujours à jour par rapport aux dernières technologies.'
               }, 
               {
-                title: 'lorem fds',
-                text: 'drgtrzgtrg zrtg rtge trgg ertg rtg rettg erth rethth tuy tze(yt rtuyrt'
+                title: 'TRAVAILLEUR',
+                text: 'Que ce soit pour moi-même ou pour tiers un  quand un projet me tient à cœur, je mets toujours un point d\'honneur à le mener à terme.'
               } 
             ]
           } 
@@ -82,30 +121,67 @@ function App() {
           value:"course",
           id: 1,
           dataSection:{
-            xp:[{ 
-              imgXp: {
-                src: imgP, 
-                alt:"exemple alt"
+            xp:[
+              { 
+                imgXp: {
+                  src: imgConginWeb, 
+                  alt:"Logo entreprise CodingWeb"
+                },
+                type: "Stage développeur Node JS",
+                title: "CodingWeb",
+                date: "nov. 2020 - déc. 2020 . 2 mois",
+                map: "Beaucouzé, Pays de la Loire",
+                desc: [ 
+                  "J'ai réalisé un stage de fin d'études dans l'entreprise CodingWeb durée de 2 mois, dans lequel j'ai travaillé sur deux projets :",
+                  "- Un projet nommé BluEx, qui consistait à mettre à jour technologiquement une plate-forme destinée à des professionnels pour gérer des événements ou des salons. J'ai donc travaillé sur un environnement utilisant le framework Meteor JS, dans lequel je devais insérer des composants React pour convertir progressivement les différentes parties de la plate-forme.",
+                  "- L'autre projet sur lequel j'ai travaillé durant mon stage et qui m'a donné la maîtrise de la bibliothèque Tailwind css, a été sur la mise à jour visuelle du site Meethem.fr.",
+                  "Dans lequel je devais d'abord mettre à jour le framework Meteor JS de sa version datant de 2015 la dernière version sortie en 2020. Une fois la mise à jour effectuée, j'ai eu mission de remplacer l'intégralité de la mise en page et des styles géré par Bootstrap par une version plus moderne et plus optimiser utilisant Tailwind css.",
+                ], 
+                link: "https://www.codingweb.fr/",
               },
-              type: "Formation / Experience",
-              title: "title xp",
-              date: "2020",
-              map: " 6 rue des map 49220 Angers",
-              desc: "description fdg rd gfd gfd sgfdsg gtyr e tyrteyr tyry ",
-              link: "https//// th trhe htr ehtr ehtr ert",
-            },{ 
-              imgXp: {
-                src: imgP, 
-                alt:"exemple alt"
+              { 
+                imgXp: {
+                  src: imgcefii, 
+                  alt:"Logo Cefii"
+                },
+                type: "Formation Développeur Web FullStack",
+                title: "CEFii - L'Ecole Supérieure du Web",
+                date: "2020 - 2021",
+                map: "Angers, Pays de la Loire",
+                desc: [ 
+                  "Tout au long de ma formation de développeur, j'ai réalisé différents projets visant à m'enseigner les différents aspects du métier de développeur Web. Mais aussi à développer mes capacités pour travailler en équipe ou pour en diriger une.",
+                 ], 
+                link: "https://cefii.fr/",
               },
-              type: "Formation",
-              title: "title xp",
-              date: "2021",
-              map: " 6 rue des map 49220 Angers",
-              desc: "description fdg rd gfd  e tyrteyr tyry ",
-              link: "https//// th trhe htr ehtr ehtr ert",
-            },
-          ]
+              { 
+                imgXp: {
+                  src: imgBlaisePascal, 
+                  alt:"Logo Lycée Blaise Pascal"
+                },
+                type: "BTS MSI - maintenance des systèmes industriels",
+                title: "Lycée Blaise Pascal",
+                date: "2017 - 2018",
+                map: "Angers, Pays de la Loire",
+                desc: [ 
+                  "Arrêter au bout d'un an pour apprendre le développement en autodidacte.",
+                 ], 
+                link: "https://pascal.paysdelaloire.e-lyco.fr/",
+              },
+              { 
+                imgXp: {
+                  src: imgBlaisePascal, 
+                  alt:"Logo Lycée Blaise Pascal"
+                },
+                type: "Bac pro Gestion-Administration ",
+                title: "Lycée Blaise Pascal ",
+                date: "2015 - 2017",
+                map: "Angers, Pays de la Loire",
+                desc: [ 
+                  "Obtention du bac avec mention assez bien.",
+                 ], 
+                link: "https://pascal.paysdelaloire.e-lyco.fr/",
+              },
+            ]
           }
         },
         {
@@ -118,73 +194,146 @@ function App() {
                titlesection: "Domaines de compétences",
                liste: [
                  {
-                   title: "gestion  projet",
-                   listeSkill: "test, vlabla, reza , re rez e, etretzerztre, treztrez ,ert ertertertz",
+                   title: "GESTION DE PROJETS WEB",
+                   listeSkill: "Site vitrine, e-commerce, application mobile",
                  },
                  {
-                   title: " de projet",
-                   listeSkill: "test, vlabla, reza , re rez e, treztrez ,ert ertertertz",
+                   title: "CONCEPTION GRAPHIQUE / WEBDESINGN",
+                   listeSkill: "Logos, templates Web, plaquettes publicitaires, cartes de visite",
                  },
                  {
-                   title: "gestion de ",
-                   listeSkill: "test, vlabla, , etretzerztre, treztrez ,ert ertertertz",
-                 }
+                   title: "APPLICATION DE GESTION INTRA-ENTREPRISE",
+                   listeSkill: "PHP - MySQL - AJAX",
+                 },
+                 {
+                   title: "INT2GRATION (X)HTML / CSS",
+                   listeSkill: "Travail sans sur-couche, respectueux des standards du Web",
+                 },
+                 {
+                   title: "DYNAMISE DES PAGES PAR JAVASCRIPT / AJAX",
+                   listeSkill: "jQuery",
+                 },
+                 {
+                   title: "RÉFERENCEMENT NATUREL",
+                   listeSkill: "Accessibilité & ergonomie des pages web",
+                 },
+                 {
+                   title: "CONCEPTION MULTI-PLATEFORMES",
+                   listeSkill: "Compatible tous supports, tablette & application mobile",
+                 },
                ]
              },
              pannelLvl: [{
               titlesection: "Compétence en développement",
               skillLevel: [
                 {
-                  title: "js react",
+                  title: "React JS",
                   imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgreact, 
+                    alt:"Logo React.js"
+                  },
+                  lvl : 9, 
+                },
+                {
+                  title: "Meteor JS",
+                  imgSkill: {
+                    src: imgmeteor, 
+                    alt:"logo meteor JS"
+                  },
+                  lvl : 6, 
+                },
+                {
+                  title: "Angular",
+                  imgSkill: {
+                    src: imgangular, 
+                    alt:"logo Angular"
+                  },
+                  lvl : 6, 
+                },
+                {
+                  title: "WordPress",
+                  imgSkill: {
+                    src: imgwordpress, 
+                    alt:"logo WordPress"
+                  },
+                  lvl : 9, 
+                },
+                {
+                  title: "JS",
+                  imgSkill: {
+                    src: imgJS, 
+                    alt:"logo JS"
+                  },
+                  lvl : 10, 
+                },
+                {
+                  title: "PHP",
+                  imgSkill: {
+                    src: imgphp, 
+                    alt:"logo PHP"
+                  },
+                  lvl : 9, 
+                },
+                {
+                  title: "MySQL",
+                  imgSkill: {
+                    src: imgmysql, 
+                    alt:"logo MySQL"
+                  },
+                  lvl : 6, 
+                },
+                {
+                  title: "MongoDB",
+                  imgSkill: {
+                    src: imgmongodb, 
+                    alt:"logo MongoDB"
                   },
                   lvl : 4, 
                 },
                 {
-                  title: "js ajax",
+                  title: "Bootstrap",
                   imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgbootstrap, 
+                    alt:"logo MongoDB"
                   },
-                  lvl : 3, 
+                  lvl : 10, 
                 },
                 {
-                  title: "js html",
+                  title: "Tailwind CSS",
                   imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgtailwind, 
+                    alt:"logo Tailwind"
                   },
-                  lvl : 6, 
+                  lvl : 8, 
                 },
+                
               ]
              },{
               titlesection: "Compétences en conception graphique",
               skillLevel: [
                 {
-                  title: "photoshop",
+                  title: "Adobe Photoshop",
                   imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
-                  },
-                  lvl : 5, 
-                },
-                {
-                  title: "première pro",
-                  imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgphotoshop, 
+                    alt:"logo Photoshop"
                   },
                   lvl : 8, 
                 },
                 {
-                  title: "clip studio paint",
+                  title: "Adobe Première pro",
                   imgSkill: {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgPremière, 
+                    alt:"logo Première pro"
                   },
-                  lvl : 6, 
+                  lvl : 10, 
+                },
+                {
+                  title: "OBS",
+                  imgSkill: {
+                    src: imgobs, 
+                    alt:"logo OBS"
+                  },
+                  lvl : 10, 
                 },
               ]
              },

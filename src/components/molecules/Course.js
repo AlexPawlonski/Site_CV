@@ -15,13 +15,12 @@ return(
         <Title type="h2-b" data={data.type}/>
       </div>
       <div className="flex">
-        <Img  type="xp" data={data.imgXp}/>
+        <a className="cursor-pointer" href={data.link} target="_blank"><Img  type="xp" data={data.imgXp}/></a>
         <div className="ml-3">
           <Title type="h2" data={data.title}/>
           <div>
             <Date data={data.date}/>
-            <Localisation data={data.map}/>
-                                                                   
+            <Localisation data={data.map}/>                                                   
           </div>
         </div>
       </div>
