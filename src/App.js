@@ -27,15 +27,43 @@ import imgphotoshop from './img/imgTech/design/PhotoShop.png';
 import imgPremière from './img/imgTech/design/Première.png';
 import imgobs from './img/imgTech/design/obs.png';
 
+/**INPORT LOGO */
+import logo from './img/logo/logo.png';
+import logoW from './img/logo/logo-w.png'
+import logoGit from './img/logo/logoGit.png'
+import logoLinkeDin from './img/logo/logoLinkeDin.png'
 
 /**import img fond-PP */
 import imgFondHeader from './img/imgFond/bg-homepage.PNG';
 import fondImg from './img/imgFond/fondRose.jpg';
-
 import imgP from './img/PhotoDeProfile.PNG';
 
-import logo from './img/logo/logo.png';
-import logoW from './img/logo/logo-w.png';
+/**INPORT IMG PORTFOLIO */
+import imgBluexHome from './img/imgPortFolio/BluEx/homePage.jpg';
+import imgBluexInfo from './img/imgPortFolio/BluEx/infoPage.jpg';
+import imgBluexMarket from './img/imgPortFolio/BluEx/marketPage.jpg';
+import imgBluexShow from './img/imgPortFolio/BluEx/showPage.jpg';
+
+import imgMeethemConexion from './img/imgPortFolio/meethem/conexionPage.jpg';
+import imgMeethemliste from './img/imgPortFolio/meethem/listePage.jpg';
+import imgMeethemAdd from './img/imgPortFolio/meethem/addPage.jpg';
+import imgMeethemVote from './img/imgPortFolio/meethem/votePage.jpg';
+
+import imgJquery from './img/imgPortFolio/siteJquery/HomePage.jpg';
+import imgplanette from './img/imgPortFolio/siteJquery/planettePage.jpg';
+import imgpopUp from './img/imgPortFolio/siteJquery/popUpPage.jpg';
+import imgpopUp2 from './img/imgPortFolio/siteJquery/popUpPage2.jpg';
+import imgcontact from './img/imgPortFolio/siteJquery/contact.jpg';
+
+import imgconexionCms from './img/imgPortFolio/MVC/conexionPage.jpg';
+import imghomeCms from './img/imgPortFolio/MVC/homePage.jpg';
+import imglisteCms from './img/imgPortFolio/MVC/listePage.jpg';
+import imgupdateCms from './img/imgPortFolio/MVC/updatePage.jpg';
+
+import imghomeWordPress from './img/imgPortFolio/wordpresFleurist/homePage.jpg';
+import imghome2WordPress from './img/imgPortFolio/wordpresFleurist/homePage2.jpg';
+import imgequipeWordPress from './img/imgPortFolio/wordpresFleurist/equipePage.jpg';
+import imgcontactWordPress from './img/imgPortFolio/wordpresFleurist/contactPage.jpg';
 
 /*IMPORT COMPONENT*/ 
 import Header from './components/organism/Header.js';
@@ -346,85 +374,229 @@ function App() {
           id: 3,
           pannelProject:[
             {
-              title: "name Project",
-              subTitle: "type",
+              title: "BlueX",
+              subTitle: "Migration/Mise à jour",
               img: {
-                src: imgP, 
-                alt:"exemple alt"
+                src: imgBluexHome, 
+                alt:"HomePage Bluex"
               },
               dataProject: {
                 carouselImg: [
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgBluexHome, 
+                    alt:"HomePage Bluex"
                   },
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgBluexShow, 
+                    alt:"ShowPage Bluex"
                   },
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgBluexMarket, 
+                    alt:"MarketPage Bluex"
+                  },
+                  {
+                    src: imgBluexInfo, 
+                    alt:"InfoPage Bluex"
                   },
                 ],
-                author: "Alex Pawlonski",
-                client: "entreprise",
-                date:"date",
-                desc: "vfz vfr vfrz dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
-                skill: ["css", "html", "JS"],
-                framWork: ["react", "Meteor"],
-                tabWork: ['traveaux 1','traveaux 1','traveaux 1','traveaux 1',],
+                author: "CodingWeb",
+                client: "Shepard",
+                date:"nov. 2020 - déc. 2020",
+                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["Bootstrap", "HTML", "CSS", "JS", "FireBlaze template"],
+                framWork: ["React JS", "Meteor JS", "MongoDB"],
+                tabWork: ['Création de composent React','mise a jour de template HTML','Mise a jour de style css et Boostrape'],
                 link: {
-                  linkWebSite: {
-                    value:"lien site web", 
-                    src: "https:",
-                  },
-                  linkAuthor: {
-                    value:"lien site web", 
-                    src: "https:",
-                  },
-              }
+                    linkWebSite: {
+                      value:"Site Web Shepard Events", 
+                      src: "https://www.shepardes.com/",
+                    },
+                    linkAuthor: {
+                      value:"Site Web CodingWeb", 
+                      src: "https://www.codingweb.fr/index.html",
+                    },
+                }
               }
             },
             {
-              title: "name ",
-              subTitle: "type",
+              title: "Meethem",
+              subTitle: "Mise à jour / Ajout de technoligie",
               img: {
-                src: imgP, 
-                alt:"exempl"
+                src: imgMeethemConexion, 
+                alt:"HomePage Meethem"
               },
               dataProject: {
                 carouselImg: [
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgMeethemConexion, 
+                    alt:"HomePage Meethem"
                   },
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgMeethemliste, 
+                    alt:"ListePage Meethem"
                   },
                   {
-                    src: imgP, 
-                    alt:"exemple alt"
+                    src: imgMeethemAdd, 
+                    alt:"AddPage Meethem"
+                  },
+                  {
+                    src: imgMeethemVote, 
+                    alt:"VotePage Meethem"
+                  },
+                ],
+                author: "CodingWeb",
+                client: "Projet intern",
+                date:"nov. 2020 - déc. 2020",
+                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["Tailwind CSS","Bootstrap", "HTML", "CSS", "JS", "FireBlaze template"],
+                framWork: ["Meteor JS", "MongoDB"],
+                tabWork: ['mise a jour de template HTML','Mise a jour de style css', 'Migration de Bootstrap ver Tailwind CSS'],
+                link: {
+                    linkWebSite: {
+                      value:"Site Web Meethem", 
+                      src: "https://meethem.codingweb.fr",
+                    },
+                    linkAuthor: {
+                      value:"Site Web CodingWeb", 
+                      src: "https://www.codingweb.fr/index.html",
+                    },
+                }
+              }
+            },
+            {
+              title: "Site Espace",
+              subTitle: "Projet d'étude JQuery",
+              img: {
+                src: imgJquery, 
+                alt:"HomePage Espace"
+              },
+              dataProject: {
+                carouselImg: [
+                  {
+                    src: imgJquery, 
+                    alt:"HomePage Espace"
+                  },
+                  {
+                    src: imgplanette, 
+                    alt:"ListePage Espace"
+                  },
+                  {
+                    src: imgpopUp, 
+                    alt:"popUp Espace"
+                  },
+                  {
+                    src: imgpopUp2, 
+                    alt:"popUp2 Espace"
+                  },
+                  {
+                    src: imgcontact, 
+                    alt:"Contact Espace"
                   },
                 ],
                 author: "Alex Pawlonski",
-                client: "entreprise",
-                date:"date",
+                client: "Projet d'étude Cefii",
+                date:"juin. 2020",
                 desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
-                skill: ["css", "html", "JS"],
-                cms: ["css", "html", "JS"],
-                framWork: ["react", "Meteor"],
-                tabWork: [' 1','traveaux 1','traveaux 1','traveaux 1',],
+                skill: ["HTML", "CSS", "JS", "JQuery"],
+                tabWork: ['Création du site en HTML','Animation en CSS et JS ', 'Création d\'un formulaire de contact avec test intégré'],
                 link: {
                     linkWebSite: {
-                      value:"lien site web", 
-                      src: "https:",
+                      value:"Site Web Cefii", 
+                      src: "https://cefii.fr/",
                     },
                     linkAuthor: {
-                      value:"lien site web", 
+                      value:"Site Web Alex PAWLONSKI ", 
                       src: "https:",
                     },
+                }
+              }
+            },
+            {
+              title: "Application de gestion des Stock",
+              subTitle: "Projet d'étude PHP/MVC",
+              img: {
+                src: imglisteCms, 
+                alt:"listePage Cms"
+              },
+              dataProject: {
+                carouselImg: [
+                  {
+                    src: imglisteCms, 
+                    alt:"listePage Cms"
+                  },
+                  {
+                    src: imgconexionCms, 
+                    alt:"conexionPage Cms"
+                  },
+                  {
+                    src: imghomeCms, 
+                    alt:"homePage Cms"
+                  },
+                  {
+                    src: imgupdateCms, 
+                    alt:"UpdapePage Cms"
+                  },
+                ],
+                author: "Alex Pawlonski",
+                client: "Projet d'étude Cefii",
+                date:"Juilet. 2020",
+                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["PHP", "MySql", "MVC", "HTML", "Boostrap"],
+                tabWork: ['Création de page HTML','Mise en page avec Boostrap', 'Création d\'un MVC en PHP', 'Mise en place d\'un CRUD avec des requette SQL'],
+                link: {
+                  linkWebSite: {
+                    value:"Site Web Cefii", 
+                    src: "https://cefii.fr/",
+                  },
+                  linkAuthor: {
+                    value:"Alex PAWLONSKI", 
+                    src: "https://www.linkedin.com/in/alex-pawlonski-4b38381b2/",
+                  },
+                }
+              }
+            },
+            {
+              title: "Site vitrin fleuriste",
+              subTitle: "Création d'un theme WordPress en PHP",
+              img: {
+                src: imghomeWordPress, 
+                alt:"HomePage WordPress"
+              },
+              dataProject: {
+                carouselImg: [
+                  {
+                    src: imghomeWordPress, 
+                    alt:"HomePage WordPress"
+                  },
+                  {
+                    src: imghome2WordPress, 
+                    alt:"HomePage2 WordPress"
+                  },
+                  {
+                    src: imgequipeWordPress, 
+                    alt:"EquipePage WordPress"
+                  },
+                  {
+                    src: imgcontactWordPress, 
+                    alt:"ContactPage WordPress"
+                  },
+                ],
+                author: "Alex PAWLONSKI + les étudiants du Cefii ",
+                client: "Projet d'étude WordPress et PHP",
+                date:"Mai. 2020",
+                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                skill: ["PHP", "HTML", "CSS"],
+                cms: ["WordPress"],
+                tabWork: ['Création d\'un theme WordPres','Mise en page et intégration CSS', 'Management d\'une équipe de développeur'],
+                link: {
+                  linkWebSite: {
+                    value:"Site Web Cefii", 
+                    src: "https://cefii.fr/",
+                  },
+                  linkAuthor: {
+                    value:"Alex PAWLONSKI", 
+                    src: "https://www.linkedin.com/in/alex-pawlonski-4b38381b2/",
+                  },
                 }
               }
             },
@@ -441,22 +613,22 @@ function App() {
               data: [
                 {
                   logo: {
-                    src: imgP, 
-                    alt:"exempl"
+                    src: logoGit, 
+                    alt:"Logo GitHub"
                   }, 
                   link:{
-                    url: "https:///",
-                    value: "link ver le réseaux"
+                    url: "https://github.com/AlexPawlonski",
+                    value: "Alex Pawlonski"
                   }
                 },
                 {
                   logo: {
-                    src: imgP,
-                    alt:"exempl"
+                    src: logoLinkeDin,
+                    alt:"Logo LinkeDin"
                   }, 
                   link:{
-                    url: "https:///",
-                    value: "link réseaux"
+                    url: "https://www.linkedin.com/in/alex-pawlonski-4b38381b2",
+                    value: "@AlexPawlonski"
                   }
                 },
               ]
@@ -473,8 +645,8 @@ function App() {
       ]}/>
       <Footer data={{
         logo: {
-          src: imgP, 
-          alt:"exempl"
+          src: logoW, 
+          alt:"Logo Alex PAWLONSKI"
         },
         info: {
           title: "Développeur web junior en recherche d'emploi",
