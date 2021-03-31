@@ -376,6 +376,7 @@ function App() {
             {
               title: "BlueX",
               subTitle: "Migration/Mise à jour",
+              id:"p1",
               img: {
                 src: imgBluexHome, 
                 alt:"HomePage Bluex"
@@ -421,6 +422,7 @@ function App() {
             {
               title: "Meethem",
               subTitle: "Mise à jour / Ajout de technoligie",
+              id:"p2",
               img: {
                 src: imgMeethemConexion, 
                 alt:"HomePage Meethem"
@@ -466,6 +468,7 @@ function App() {
             {
               title: "Site Espace",
               subTitle: "Projet d'étude JQuery",
+              id:"p3",
               img: {
                 src: imgJquery, 
                 alt:"HomePage Espace"
@@ -514,6 +517,7 @@ function App() {
             {
               title: "Application de gestion des Stock",
               subTitle: "Projet d'étude PHP/MVC",
+              id:"p4",
               img: {
                 src: imglisteCms, 
                 alt:"listePage Cms"
@@ -558,6 +562,7 @@ function App() {
             {
               title: "Site vitrin fleuriste",
               subTitle: "Création d'un theme WordPress en PHP",
+              id:"p5",
               img: {
                 src: imghomeWordPress, 
                 alt:"HomePage WordPress"

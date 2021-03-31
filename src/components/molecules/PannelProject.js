@@ -4,9 +4,10 @@ import Title from '../atoms/Title.js';
 import Img from '../atoms/Img.js';
 
 export const PannelProject = ({ data , fInfoPopUp, ...props }) => {
-
+    console.log(data);
+    let link = "#"+data.id
 return(
-    <div onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-lg transform hover:scale-105 duration-100 cursor-pointer">
+    <a href={link}  onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-lg transform hover:scale-105 duration-100 cursor-pointer">
         <div>
             <Img type="project" data={data.img}/>
         </div>
@@ -21,7 +22,7 @@ return(
                 </div>
             </div>
         </div>
-    </div>
+    </a>
 )
 }
 PannelProject.propTypes = {

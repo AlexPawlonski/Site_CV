@@ -11,9 +11,10 @@ const CloseDiv = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: #fff;
+    background-color: rgba(239, 68, 68);
     border-radius: 10px;
     transform-origin: 15px;
+    
     &:nth-child(1) {
       transform: rotate(45deg);
     }
@@ -28,7 +29,7 @@ export const InfoProject = ({ data , fClosePopUp, ...props }) => {
 
 if (data) {
     return(
-        <div className="bg-white my-2 w-full rounded-lg">
+        <div id={data.id} className="bg-white my-2 w-full rounded-lg">
             <div className="flex justify-between">
                 <div className="mx-2 items-center flex ">
                     <Title type="h2" data={data.title}/>

@@ -10,6 +10,7 @@ export const Portfolio = ({ data , ...props }) => {
   function closePopUp(){
     setData(null)
   }
+
 return(
   <div className="flex flex-col justify-center">
     <div className="w-full">
