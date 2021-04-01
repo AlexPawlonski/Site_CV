@@ -159,6 +159,7 @@ function App() {
                 title: "CodingWeb",
                 date: "nov. 2020 - déc. 2020 . 2 mois",
                 map: "Beaucouzé, Pays de la Loire",
+                view: true,
                 desc: [ 
                   "J'ai réalisé un stage de fin d'études dans l'entreprise CodingWeb durée de 2 mois, dans lequel j'ai travaillé sur deux projets :",
                   "- Un projet nommé BluEx, qui consistait à mettre à jour technologiquement une plate-forme destinée à des professionnels pour gérer des événements ou des salons. J'ai donc travaillé sur un environnement utilisant le framework Meteor JS, dans lequel je devais insérer des composants React pour convertir progressivement les différentes parties de la plate-forme.",
@@ -176,6 +177,7 @@ function App() {
                 title: "CEFii - L'Ecole Supérieure du Web",
                 date: "2020 - 2021",
                 map: "Angers, Pays de la Loire",
+                view: true,
                 desc: [ 
                   "Tout au long de ma formation de développeur, j'ai réalisé différents projets visant à m'enseigner les différents aspects du métier de développeur Web. Mais aussi à développer mes capacités pour travailler en équipe ou pour en diriger une.",
                  ], 
