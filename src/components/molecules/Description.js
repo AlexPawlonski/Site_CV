@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons/';
 
 const Desc = styled.div`
-    height: ${({ open }) => open ? '80px' : '100%'};
+    height: ${({ open }) => open ? '100%' : '80px'};
     box-shadow: 0px -10px 1px 1px rgba(1000,1000,1000);
     overflow: hidden;
   `;
 
 const Anim = styled.div`
-    transform: ${({ open }) => open ? 'rotate(0deg)' : 'rotate(180deg)'};
+    transform: ${({ open }) => open ? 'rotate(180deg)' : 'rotate(0deg)'};
   `;
 
 

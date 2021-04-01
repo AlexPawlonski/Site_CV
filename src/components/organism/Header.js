@@ -17,7 +17,7 @@ export const Header = ({ data , ...props }) => {
   return (
     <header id="home" style={sectionStyle} className="md:bg-cover h-screen mb-20 bg-no-repeat">
       <div className="float-left m-2" style={{zIndex:"200"}}>
-        <DlButton data="Télécharger le VC"/>
+        <DlButton data="Télécharger le CV"/>
       </div>
       <Parallax y={[0, 100]}>
         <div className="w-full flex flex-col items-center">
