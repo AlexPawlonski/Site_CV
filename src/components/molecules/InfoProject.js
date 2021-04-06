@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Title from '../atoms/Title.js';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTable, faBusinessTime} from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faBusinessTime} from '@fortawesome/free-solid-svg-icons';
 import SlideShow from './SlideShow.js';
 import Button from '../atoms/Button.js';
 const CloseDiv = styled.div`
@@ -29,12 +29,12 @@ export const InfoProject = ({ data , fClosePopUp, ...props }) => {
 
 if (data) {
     return(
-        <div id={data.id} className="bg-white my-2 w-full rounded-lg">
-            <div className="flex justify-between">
+        <div id={data.id} className="bg-white my-2 xl:w-5/6 mr-auto ml-auto rounded-lg">
+            <div className="flex justify-between border-b-2 border-red-400 mx-2 mb-2">
                 <div className="mx-2 items-center flex ">
                     <Title type="h2" data={data.title}/>
                 </div>
-                <div onClick={fClosePopUp} className=" float-right cursor-pointer h-10 m-1 mr-3">
+                <div onClick={fClosePopUp} className=" float-right cursor-pointer h-10 m-1 mr-3 transform hover:scale-105 duration-100">
                     <CloseDiv className="transform translate-y-4">
                         <div />
                         <div />
@@ -54,38 +54,40 @@ if (data) {
                         </div>
                     </div>
                     <ul>
-                        {data.dataProject.tabWork.map( data => <li className="flex items-center my-1"><FontAwesomeIcon className="m-1" icon={faBusinessTime}/> <p>{data}</p> </li>)}
+                        {data.dataProject.tabWork.map( data => <li className="flex items-center my-1"><FontAwesomeIcon className="m-1 text-xl" icon={faBusinessTime}/> <p className="ml-2">{data}</p> </li>)}
                     </ul>
                 </div>
                 <div className="mx-2 sm:w-8/12 ">
                     <Title type="h2" data={"Infos du projet"} />
-                    <div className="flex items-center border-gray-600 border-t mt-1">
-                        <div className="m-1 text-red-900">
-                           <FontAwesomeIcon icon={faTable} /> 
-                        </div>
-                        <div className="text-gray-500">
-                             <Title type={"h3"} data={"Date :"}/>
+                    <div className="flex items-center  border-t mt-1 border-gray-600">
+                        <div className="m-1 text-3xl text-black">
+                           <FontAwesomeIcon icon={faCalendarAlt} /> 
                         </div>
                         <div className="m-1">
-                           <p className="font-semibold">{data.dataProject.date} </p>
+                            <div className="text-black">
+                                <Title type={"h3"} data={"Date :"}/>
+                            </div>
+                            <div >
+                                <p className="font-semibold text-red-600">{data.dataProject.date} </p>
+                            </div>   
                         </div>
-                        
                     </div>
                     <div className="flex items-center">
-                        <div className="m-1 text-red-900">
-                           <FontAwesomeIcon icon={faTable} /> 
-                        </div>
-                        <div className="text-gray-500">
-                            <Title type={"h3"} data={"Type de Projet :"}/>
+                        <div className="m-1 text-3xl text-black">
+                           <FontAwesomeIcon icon={faCalendarAlt} /> 
                         </div>
                         <div className="m-1">
-                            <p className="font-semibold">{data.subTitle}</p>
+                            <div className="text-black">
+                                <Title type={"h3"} data={"Type de Projet :"}/>
+                            </div>
+                            <div >
+                                <p className="font-semibold text-red-600">{data.subTitle}</p>
+                            </div>   
                         </div>
-                        
                     </div>
                     <div className="my-2">
                         <Title type="h2" data="Techologies utilisées"/>
-                        <div className=" border-gray-600 border-t flex flex-wrap justify-around mt-1">
+                        <div className=" border-gray-600 border-t  mt-1">
                             {(data.dataProject.framWork)? 
                                 <div>
                                     <Title type="h3" data="FramWorck"/>
@@ -113,7 +115,7 @@ if (data) {
                         </div>
                         
                     </div>
-                    <div className="border-gray-600 border-t flex flex-wrap justify-around py-3 ">
+                    <div className="border-gray-600 border-t flex justify-around py-3 ">
                         {(data.dataProject.link.linkWebSite)? <Button data={data.dataProject.link.linkWebSite}/> : ""}
                         {(data.dataProject.link.linkAuthor)? <Button data={data.dataProject.link.linkAuthor}/> : ""} 
                     </div>

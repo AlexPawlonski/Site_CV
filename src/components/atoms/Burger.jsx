@@ -45,7 +45,7 @@ const Burger = ({data, ...props}) => {
   
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)} className="cursor-pointer">
+      <StyledBurger open={open} onClick={() => setOpen(!open)} className="cursor-pointer transform hover:scale-105 duration-100">
         <div />
         <div />
         <div />

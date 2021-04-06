@@ -11,9 +11,9 @@ return(
         <div>
             <Img type="project" data={data.img}/>
         </div>
-        <div className="bg-purple-600">
-            <div className="ml-2 bg-purple-600 absolute transform -translate-y-5 arrow"></div>
-            <div className="mx-1">
+        <div className="bg-white">
+            <div className="ml-2 bg-white absolute transform -translate-y-5 arrow"></div>
+            <div className="mx-1 p-2">
                 <div>
                     <Title type="h2" data={data.title}/>
                 </div>

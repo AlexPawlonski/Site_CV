@@ -28,7 +28,7 @@ export const Description = ({ data, view, ...props }) => {
     return(
       <div>
         <Desc open={open} className="border-t-2 mt-3 pt-2 pb-5 ">
-          {data.map( data => <p>{data}</p>)}
+          {data.map( data => <p className="my-2">{data}</p>)}
         </Desc>
         <div open={open} style={sectionStyle} onClick={() => setOpen(!open)} className="flex justify-center border-gray-300 border-t-2">
           <Anim open={open} className="cursor-pointer mt-2">

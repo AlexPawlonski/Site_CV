@@ -26,6 +26,7 @@ import imgajax from './img/imgTech/dev/ajax.png';
 import imgphotoshop from './img/imgTech/design/PhotoShop.png';
 import imgPremière from './img/imgTech/design/Première.png';
 import imgobs from './img/imgTech/design/obs.png';
+import imgClip from './img/imgTech/design/paint.png';
 
 /**INPORT LOGO */
 import logo from './img/logo/logo.png';
@@ -253,7 +254,45 @@ function App() {
                  },
                ]
              },
-             pannelLvl: [{
+             pannelLvl: [
+               {
+                titlesection: "Compétences en conception graphique",
+                skillLevel: [
+                  {
+                    title: "Adobe Photoshop",
+                    imgSkill: {
+                      src: imgphotoshop, 
+                      alt:"logo Photoshop"
+                    },
+                    lvl : 8, 
+                  },
+                  {
+                    title: "Adobe Première pro",
+                    imgSkill: {
+                      src: imgPremière, 
+                      alt:"logo Première pro"
+                    },
+                    lvl : 10, 
+                  },
+                  {
+                    title: "OBS",
+                    imgSkill: {
+                      src: imgobs, 
+                      alt:"logo OBS"
+                    },
+                    lvl : 10, 
+                  },
+                  {
+                    title: "Clip studio paint",
+                    imgSkill: {
+                      src: imgClip, 
+                      alt:"logo Clip studio Paint"
+                    },
+                    lvl : 7, 
+                  },
+                ]
+              },
+              {
               titlesection: "Compétence en développement",
               skillLevel: [
                 {
@@ -336,37 +375,8 @@ function App() {
                   },
                   lvl : 8, 
                 },
-                
               ]
-             },{
-              titlesection: "Compétences en conception graphique",
-              skillLevel: [
-                {
-                  title: "Adobe Photoshop",
-                  imgSkill: {
-                    src: imgphotoshop, 
-                    alt:"logo Photoshop"
-                  },
-                  lvl : 8, 
-                },
-                {
-                  title: "Adobe Première pro",
-                  imgSkill: {
-                    src: imgPremière, 
-                    alt:"logo Première pro"
-                  },
-                  lvl : 10, 
-                },
-                {
-                  title: "OBS",
-                  imgSkill: {
-                    src: imgobs, 
-                    alt:"logo OBS"
-                  },
-                  lvl : 10, 
-                },
-              ]
-             },
+             }
              ]
             }
         },
@@ -517,8 +527,8 @@ function App() {
               }
             },
             {
-              title: "Application de gestion des Stock",
-              subTitle: "Projet d'étude PHP/MVC",
+              title: "Application de gestion",
+              subTitle: "Projet d'étude PHP",
               id:"p4",
               img: {
                 src: imglisteCms, 
@@ -612,7 +622,7 @@ function App() {
         {
           title:"Contact",
           value:"contact",
-          color: "white",
+          color: "red",
           id: 4,
           data:{
             dataLink:{
