@@ -19,8 +19,8 @@ export const PannelSkill = ({ data , ...props }) => {
     }
 
     return(
-        <div className="bg-white rounded-lg p-4 pt-1 m-2" >
-            <div className="flex align-baseline">
+        <div className="bg-white rounded-lg p-4 pt-1 m-2 pb-6" >
+            <div className="flex align-baseline my-2">
                <Title type="h2" data={data.titlesection}/> 
             </div>
             <div>
@@ -29,9 +29,11 @@ export const PannelSkill = ({ data , ...props }) => {
                         <div className="m-2">
                         { <Img type="skill" data={data.imgSkill} />}  
                         </div>
-                        <div className="w-9/12 pt-3 flex flex-col ml-2">
-                            <Title type="h3" data={data.title}/>
-                            <div className="flex items-center justify-between border-gray-300 border-t-2 pt-1 mt-1">
+                        <div className="w-full pt-3 flex flex-col ml-2 justify-center">
+                            <div className="border-gray-300 border-b-2 pb-2">
+                               <Title type="h3" data={data.title}/> 
+                            </div>
+                            <div className="flex w-10/12 items-center justify-between m pt-1 mt-1 ml-auto mr-auto">
                                 {funcLvl(data.lvl).map( data => {
                                     if(data){
                                         return(

@@ -23,7 +23,9 @@ export const Header = ({ data , ...props }) => {
         <div className="w-full flex flex-col items-center">
           <Img type="user" data={data.ProfilImg}/>
           <Title type="h1-w" data={data.name}/>
-          <Title type="h2-b" data={data.subTitle}/>
+          <div className="bg-white px-3 py-1 rounded-lg">
+            <Title type="h2" data={data.subTitle}/>
+          </div>  
         </div>
         
       </Parallax>

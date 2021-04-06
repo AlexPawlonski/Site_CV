@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 export const footer = ({ data , ...props }) => {
 
   return (
-    <Parallax y={[50,-100]}>
+    <Parallax y={[50,-80]}>
       <footer  className="bg-gray-900">
         <div className="flex justify-end">
           <Img type="logo" data={data.logo}/>
@@ -30,7 +30,7 @@ export const footer = ({ data , ...props }) => {
         </div>
         <div className="flex justify-end">
           <div className="m-2">
-            <Title type="h3" data={data.name}/>
+            <Title type="h3-w" data={data.name}/>
           </div>
         </div>
       </footer>

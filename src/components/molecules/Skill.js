@@ -6,9 +6,11 @@ return(
   <div className="lg:flex pb-7 justify-center w-full">
       <div className=" xl:w-2/6 ">
         <div className="bg-white rounded-lg p-4 pt-1 m-2">
-            <Title type="h2" data={data.dataSkill.pannelSkill.titlesection}/>
+            <div className="my-2">
+                <Title type="h2" data={data.dataSkill.pannelSkill.titlesection}/>
+            </div>
                 <div>
-                {data.dataSkill.pannelSkill.liste.map( data => <div>
+                {data.dataSkill.pannelSkill.liste.map( data => <div className="pb-2">
                     <div className="my-1">
                         <Title type={"h3"} data={data.title}/>  
                     </div>
@@ -18,7 +20,7 @@ return(
                 </div> )}
             </div>
         </div>
-        <PannelSkill data={data.dataSkill.pannelLvl[0]}/>
+         <PannelSkill data={data.dataSkill.pannelLvl[0]}/>
       </div>
       <div className="xl:w-2/6">
          <PannelSkill data={data.dataSkill.pannelLvl[1]}/> 
