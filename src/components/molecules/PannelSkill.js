@@ -3,7 +3,6 @@ import Img from '../atoms/Img.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Title from '../atoms/Title.js';
-import { Parallax } from 'react-scroll-parallax';
 export const PannelSkill = ({ data , ...props }) => {
     function funcLvl(lvl){
         var lvlTab=[];

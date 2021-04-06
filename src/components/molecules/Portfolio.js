@@ -16,7 +16,7 @@ return(
     <div className="w-full">
       <InfoProject data={info} fClosePopUp={closePopUp}/>
     </div>
-    <div className="flex md:justify-center flex-wrap">
+    <div className="flex justify-center flex-wrap">
         {data.pannelProject.map( data => <PannelProject data={data} fInfoPopUp={infoPopUp} />)}  
     </div>
   </div>

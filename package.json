@@ -2,6 +2,7 @@
   "name": "site-pro-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AlexPawlonski.github.io/site_CV",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -25,6 +27,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

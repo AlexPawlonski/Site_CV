@@ -1,11 +1,8 @@
 import React from 'react';
 import Title from '../atoms/Title.js';
-import { Parallax } from 'react-scroll-parallax';
 export const Info = ({ data , ...props }) => {
   console.log(data);
 return(
-  
-  <Parallax x={[-50, 50]} className="overflow-hidden ">
   <div className="w-full flex justify-center items-center text-center my-5 lg:my-20 pb-6">
     <div className="mx-4 flex flex-col items-center justify-center">
       <div className="bg-white rounded-full">
@@ -23,8 +20,6 @@ return(
       </div>
     </div>
   </div>
-  </Parallax>
-  
 )
 }
 Info.propTypes = {

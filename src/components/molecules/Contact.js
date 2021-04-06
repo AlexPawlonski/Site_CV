@@ -3,7 +3,6 @@ import Title from '../atoms/Title.js';
 import Img from '../atoms/Img.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons/';
-import { Parallax } from 'react-scroll-parallax';
 export const Contact = ({ data , ...props }) => {
 
 return(
