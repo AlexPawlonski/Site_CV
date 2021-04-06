@@ -16,7 +16,7 @@ export const Title = ({ type, data, ...props }) => {
       break;
     case "h2":
       return(
-        <h2 className="text-red-500 font-bold text-xl">{data}</h2>
+        <h2 className="text-red-500 font-bold text-2xl">{data}</h2>
       );
       break;
     case "h2-w":
@@ -36,7 +36,7 @@ export const Title = ({ type, data, ...props }) => {
       break;
     case "h3-w":
       return(
-        <h3 className="text-white font-bold text-xl">{data}</h3>
+        <h3 className="text-white font-bold text-2xl">{data}</h3>
       );
       break;
   

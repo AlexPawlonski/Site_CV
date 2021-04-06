@@ -10,12 +10,13 @@ export const Portfolio = ({ data , ...props }) => {
   function closePopUp(){
     setData(null)
   }
+
 return(
-  <div className="flex flex-col justify-center">
+  <div className="flex flex-col justify-center pb-6">
     <div className="w-full">
       <InfoProject data={info} fClosePopUp={closePopUp}/>
     </div>
-    <div className="flex justify-center flex-wrap">
+    <div className="flex md:justify-center flex-wrap">
         {data.pannelProject.map( data => <PannelProject data={data} fInfoPopUp={infoPopUp} />)}  
     </div>
   </div>

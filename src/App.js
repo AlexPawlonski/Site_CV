@@ -26,6 +26,7 @@ import imgajax from './img/imgTech/dev/ajax.png';
 import imgphotoshop from './img/imgTech/design/PhotoShop.png';
 import imgPremière from './img/imgTech/design/Première.png';
 import imgobs from './img/imgTech/design/obs.png';
+import imgClip from './img/imgTech/design/paint.png';
 
 /**INPORT LOGO */
 import logo from './img/logo/logo.png';
@@ -159,6 +160,7 @@ function App() {
                 title: "CodingWeb",
                 date: "nov. 2020 - déc. 2020 . 2 mois",
                 map: "Beaucouzé, Pays de la Loire",
+                view: true,
                 desc: [ 
                   "J'ai réalisé un stage de fin d'études dans l'entreprise CodingWeb durée de 2 mois, dans lequel j'ai travaillé sur deux projets :",
                   "- Un projet nommé BluEx, qui consistait à mettre à jour technologiquement une plate-forme destinée à des professionnels pour gérer des événements ou des salons. J'ai donc travaillé sur un environnement utilisant le framework Meteor JS, dans lequel je devais insérer des composants React pour convertir progressivement les différentes parties de la plate-forme.",
@@ -176,6 +178,7 @@ function App() {
                 title: "CEFii - L'Ecole Supérieure du Web",
                 date: "2020 - 2021",
                 map: "Angers, Pays de la Loire",
+                view: true,
                 desc: [ 
                   "Tout au long de ma formation de développeur, j'ai réalisé différents projets visant à m'enseigner les différents aspects du métier de développeur Web. Mais aussi à développer mes capacités pour travailler en équipe ou pour en diriger une.",
                  ], 
@@ -251,7 +254,45 @@ function App() {
                  },
                ]
              },
-             pannelLvl: [{
+             pannelLvl: [
+               {
+                titlesection: "Compétences en conception graphique",
+                skillLevel: [
+                  {
+                    title: "Adobe Photoshop",
+                    imgSkill: {
+                      src: imgphotoshop, 
+                      alt:"logo Photoshop"
+                    },
+                    lvl : 8, 
+                  },
+                  {
+                    title: "Adobe Première pro",
+                    imgSkill: {
+                      src: imgPremière, 
+                      alt:"logo Première pro"
+                    },
+                    lvl : 10, 
+                  },
+                  {
+                    title: "OBS",
+                    imgSkill: {
+                      src: imgobs, 
+                      alt:"logo OBS"
+                    },
+                    lvl : 10, 
+                  },
+                  {
+                    title: "Clip studio paint",
+                    imgSkill: {
+                      src: imgClip, 
+                      alt:"logo Clip studio Paint"
+                    },
+                    lvl : 7, 
+                  },
+                ]
+              },
+              {
               titlesection: "Compétence en développement",
               skillLevel: [
                 {
@@ -334,37 +375,8 @@ function App() {
                   },
                   lvl : 8, 
                 },
-                
               ]
-             },{
-              titlesection: "Compétences en conception graphique",
-              skillLevel: [
-                {
-                  title: "Adobe Photoshop",
-                  imgSkill: {
-                    src: imgphotoshop, 
-                    alt:"logo Photoshop"
-                  },
-                  lvl : 8, 
-                },
-                {
-                  title: "Adobe Première pro",
-                  imgSkill: {
-                    src: imgPremière, 
-                    alt:"logo Première pro"
-                  },
-                  lvl : 10, 
-                },
-                {
-                  title: "OBS",
-                  imgSkill: {
-                    src: imgobs, 
-                    alt:"logo OBS"
-                  },
-                  lvl : 10, 
-                },
-              ]
-             },
+             }
              ]
             }
         },
@@ -376,6 +388,7 @@ function App() {
             {
               title: "BlueX",
               subTitle: "Migration/Mise à jour",
+              id:"p1",
               img: {
                 src: imgBluexHome, 
                 alt:"HomePage Bluex"
@@ -421,6 +434,7 @@ function App() {
             {
               title: "Meethem",
               subTitle: "Mise à jour / Ajout de technoligie",
+              id:"p2",
               img: {
                 src: imgMeethemConexion, 
                 alt:"HomePage Meethem"
@@ -466,6 +480,7 @@ function App() {
             {
               title: "Site Espace",
               subTitle: "Projet d'étude JQuery",
+              id:"p3",
               img: {
                 src: imgJquery, 
                 alt:"HomePage Espace"
@@ -512,8 +527,9 @@ function App() {
               }
             },
             {
-              title: "Application de gestion des Stock",
-              subTitle: "Projet d'étude PHP/MVC",
+              title: "Application de gestion",
+              subTitle: "Projet d'étude PHP",
+              id:"p4",
               img: {
                 src: imglisteCms, 
                 alt:"listePage Cms"
@@ -558,6 +574,7 @@ function App() {
             {
               title: "Site vitrin fleuriste",
               subTitle: "Création d'un theme WordPress en PHP",
+              id:"p5",
               img: {
                 src: imghomeWordPress, 
                 alt:"HomePage WordPress"
@@ -605,7 +622,7 @@ function App() {
         {
           title:"Contact",
           value:"contact",
-          color: "white",
+          color: "red",
           id: 4,
           data:{
             dataLink:{

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 export const Button = ({ data, ...props }) => {
   console.log(data);
   return(
-    <button className=" font-semibold m-1 px-2 py-1 bg-gray-50 border-black hover:bg-gray-300">
-      <a href={data.href}>{data.value}</a>
-    </button>
+    <a href={data.src} target="_blank" className=" text-center font-semibold text-white bg-red-700 transform hover:scale-105 duration-100 cursor-pointer m-1 px-2 py-1 ">
+      <p>{data.value}</p>
+    </a>
   );
 };
 

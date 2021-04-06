@@ -4,15 +4,16 @@ import Title from '../atoms/Title.js';
 import Img from '../atoms/Img.js';
 
 export const PannelProject = ({ data , fInfoPopUp, ...props }) => {
-
+    console.log(data);
+    let link = "#"+data.id
 return(
-    <div onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-lg transform hover:scale-105 duration-100 cursor-pointer">
+    <a href={link}  onClick={() => fInfoPopUp(data)} style={{minWidth:"150px", maxWidth:"250px"}} className="m-2 rounded-lg transform hover:scale-105 duration-100 cursor-pointer">
         <div>
             <Img type="project" data={data.img}/>
         </div>
-        <div className="bg-purple-600">
-            <div className="ml-2 bg-purple-600 absolute transform -translate-y-5 arrow"></div>
-            <div className="mx-1">
+        <div className="bg-white">
+            <div className="ml-2 bg-white absolute transform -translate-y-5 arrow"></div>
+            <div className="mx-1 p-2">
                 <div>
                     <Title type="h2" data={data.title}/>
                 </div>
@@ -21,7 +22,7 @@ return(
                 </div>
             </div>
         </div>
-    </div>
+    </a>
 )
 }
 PannelProject.propTypes = {
