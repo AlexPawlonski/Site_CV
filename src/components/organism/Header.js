@@ -24,7 +24,7 @@ export const Header = ({ data , ...props }) => {
           <Img type="user" data={data.ProfilImg}/>
           <Title type="h1-w" data={data.name}/>
           <div className="bg-white px-3 py-1 rounded-lg">
-            <Title type="h2" data={data.subTitle}/>
+            <Title type="h3-red" data={data.subTitle}/>
           </div>  
         </div>
         

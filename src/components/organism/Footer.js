@@ -15,7 +15,7 @@ export const footer = ({ data , ...props }) => {
               <Title type="h2" data={data.info.title} />
               {data.info.text.map(data => <p className="text-white p-2">{data}</p>)}
             </div>
-            <div className="p-3 pl-4 border-l-2 border-gray-400 my-2">
+            <div className="p-3 pl-4 md:border-l-2 border-gray-400 my-2">
               <ul className="py-4 text-white">
                 <li className="my-2"><Title type="h2" data={data.name}/></li>
                 <li className="flex items-center "> <FontAwesomeIcon icon={faMap} className="mr-2"/><a href={`mailto:`+data.location}>{data.location}</a></li>

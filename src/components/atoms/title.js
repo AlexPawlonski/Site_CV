@@ -39,6 +39,11 @@ export const Title = ({ type, data, ...props }) => {
         <h3 className="text-white font-bold text-2xl">{data}</h3>
       );
       break;
+    case "h3-red":
+      return(
+        <h3 className="text-red-500 font-bold text-xl text-center">{data}</h3>
+      );
+      break;
   
     default:
         <p>enter a type and value</p>
