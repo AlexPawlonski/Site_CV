@@ -415,7 +415,11 @@ function App() {
                 author: "CodingWeb",
                 client: "Shepard",
                 date:"nov. 2020 - déc. 2020",
-                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                desc: [ 
+                  "Sur ce projet j'ai réalisé plusieurs travaux, notamment une mise à jour graphique des composants existant ou des template FireBlaze html. Tout cela en utilisant bootstrap mais aussi du CSS classique pour les composants qui demandaient un peu plus de personnalisation.",
+                  "J'ai aussi effectué un travail assez conséquent sur la marketplace du site “Voir diapositive 3”  en créant et en paramétrant le composants filtre des produits de la boutique. ",
+                  "J'ai effectué mon travail en utilisant l'application storybook,  et en étant supervisé par mon chef d'équipe via la plate-forme Gira qui nous servait à communiquer entre membres de l'équipe mais aussi avec  les responsables du projet de l'entreprise Shepard Event.",
+                ],
                 skill: ["Bootstrap", "HTML", "CSS", "JS", "FireBlaze template"],
                 framWork: ["React JS", "Meteor JS", "MongoDB"],
                 tabWork: ['Création de composent React','mise a jour de template HTML','Mise a jour de style css et Boostrape'],
@@ -461,7 +465,10 @@ function App() {
                 author: "CodingWeb",
                 client: "Projet intern",
                 date:"nov. 2020 - déc. 2020",
-                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                desc: [ 
+                  "Pour cette application qui a été créée en 2015. On m'a confié la responsabilité de sa migration d'une version assez daté de Meteor JS,  à la dernière version sortie au moment où j'ai réalisé mon travail.",
+                  "Une fois la migration faite et le site fonctionnel,  on m'a confié la tâche de mettre à jour graphiquement les templates HTML du site qui utilisait Bootstrap. Mais surtout de remplacer l'intégralité des styles géré par bootstrap,  par une technologie différente nommée Storybook CSS.",
+                ],
                 skill: ["Tailwind CSS","Bootstrap", "HTML", "CSS", "JS", "FireBlaze template"],
                 framWork: ["Meteor JS", "MongoDB"],
                 tabWork: ['mise a jour de template HTML','Mise a jour de style css', 'Migration de Bootstrap ver Tailwind CSS'],
@@ -511,7 +518,11 @@ function App() {
                 author: "Alex Pawlonski",
                 client: "Projet d'étude Cefii",
                 date:"juin. 2020",
-                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                desc: [ 
+                  "Projet qu'un projet d'étude réalisé durant ma formation, consistant à réaliser un site  complètement animé utilisant jQuery.",
+                  "j'ai alors été amené à travailler sur la réalisation d'une page interactive “Voir diapositive numéro 2”  composé d'une reconstitution du système solaire fixe,  qui quand on clique sur les planètes présente dans la liste à sa gauche  s'anime  pour représenter leur trajectoire autour du Soleil.",
+                  "Dans ce projet en plus des animations j'ai travaillé sur une partie sécuritée “ voir diapositives 5”  Où je devais mettre en place des vérification de chant texte à l'envoi d'un formulaire.",
+                ],
                 skill: ["HTML", "CSS", "JS", "JQuery"],
                 tabWork: ['Création du site en HTML','Animation en CSS et JS ', 'Création d\'un formulaire de contact avec test intégré'],
                 link: {
@@ -556,7 +567,9 @@ function App() {
                 author: "Alex Pawlonski",
                 client: "Projet d'étude Cefii",
                 date:"Juilet. 2020",
-                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                desc: [ 
+                  "Projet d'étude réalisé durant ma formation qui visait à nous entraîner et à nous perfectionner sur l'utilisation de MySQL et de PHP dans une structure de site web en MVC,  comportant un CRUD pour gérer les données d'une base de données.",
+                ],
                 skill: ["PHP", "MySql", "MVC", "HTML", "Boostrap"],
                 tabWork: ['Création de page HTML','Mise en page avec Boostrap', 'Création d\'un MVC en PHP', 'Mise en place d\'un CRUD avec des requette SQL'],
                 link: {
@@ -601,7 +614,10 @@ function App() {
                 author: "Alex PAWLONSKI + les étudiants du Cefii ",
                 client: "Projet d'étude WordPress et PHP",
                 date:"Mai. 2020",
-                desc: "vfz v dvfr zrfvfvefvzefsvnfdkfdzjkfjr ",
+                desc: [ 
+                  "Projet que j'ai réalisé en équipe durant ma formation, Qui visait a entraîné et à nous apprendre la gestion d'une équipe et son management puisque nous avons chacun était amené à diriger le travail des autres sur le projet. ",
+                  "Mais aussi à faire une synthèse de tout ce que nous avions appris sur la création de thème et de plugin en PHP pour WordPress.",
+                ],        
                 skill: ["PHP", "HTML", "CSS"],
                 cms: ["WordPress"],
                 tabWork: ['Création d\'un theme WordPres','Mise en page et intégration CSS', 'Management d\'une équipe de développeur'],
@@ -667,7 +683,10 @@ function App() {
         },
         info: {
           title: "Développeur web junior en recherche d'emploi",
-          text: "fgregregrezgerz rtetzgrtez retkerztykezrktkert kertk zerktkerztkerztk ezrkt kerztkertkerktkzertkekzrtk zert",
+          text: [
+            "Si ce site vous a convaincu,  un embauché n'hésitez pas à me contacter,  je me ferai un plaisir de vous répondre et pourquoi pas de vous rencontrer.",
+            "Passionné par la technologie et le développement, j'aime m'investir dans un projet et réaliser un travail de qualité."
+          ],
         }, 
         name: "Alex PAWLONSKI",
         location: "35 bis rue d'anjou 49220 Erdre en anjou",

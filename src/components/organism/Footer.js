@@ -13,7 +13,7 @@ export const footer = ({ data , ...props }) => {
           <div className=" ml-auto mr-auto w-10/12 md:flex justify-between">
             <div className="p-3">
               <Title type="h2" data={data.info.title} />
-              <p className="text-white">{data.info.text}</p>
+              {data.info.text.map(data => <p className="text-white p-2">{data}</p>)}
             </div>
             <div className="p-3 pl-4 border-l-2 border-gray-400 my-2">
               <ul className="py-4 text-white">

@@ -48,9 +48,11 @@ if (data) {
             <div className="sm:flex justify-around ml-auto mr-auto mt-2">
                 <div className="mx-2 w-full">
                     <div className="border-gray-600 border-b pb-1 ">
-                        <Title type="h2" data={"Travail réalisé sur le projet"} />
+                        <div className="pb-2">
+                          <Title type="h2" data={"Travail réalisé sur le projet"} />  
+                        </div>
                         <div>
-                            <p>{data.dataProject.desc}</p>
+                            {data.dataProject.desc.map( data => <p className="p-1">{data}</p>)}
                         </div>
                     </div>
                     <ul>
