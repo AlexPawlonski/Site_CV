@@ -8,7 +8,7 @@ import Img from '../atoms/Img.js'
 export const SlideShow = ({ data , ...props }) => {
   console.log(data);
   return(
-    <Carousel showStatus={false} showThumbs={false}>
+    <Carousel showStatus={false} showThumbs={false} autoPlay={true} infiniteLoop={true} interval={4000}>
         {data.map( data => <div className=""><Img type="slideShow" data={data}/></div>)}
     </Carousel>
   )

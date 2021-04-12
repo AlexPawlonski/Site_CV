@@ -82,11 +82,11 @@ function App() {
   };
 
   return (
-    <div id="wrapper" style={sectionStyle} className="App flex flex-col my-0 mx-auto bg-fixed bg-cover">
+    <div id="wrapper"  className="App flex flex-col my-0 mx-auto bg-fixed bg-cover bg-gradient-to-b from-red-600 to-purple-800">
 
       <Header data={{
         name: "Alex Pawlonski",
-        subTitle: "Développeur junior WEB / WEB-MODILE",
+        subTitle: "Développeur junior WEB spécialisé NodeJS",
         bgImg: imgFondHeader,
         ProfilImg: {
           src: imgP,
@@ -218,7 +218,7 @@ function App() {
         {
           title:"Compétence",
           value:"skill",
-          color: "blue",
+          color: "red",
           id: 2,
           dataSkill:{
              pannelSkill :{
@@ -684,8 +684,7 @@ function App() {
         info: {
           title: "Développeur web junior en recherche d'emploi",
           text: [
-            "Si ce site vous a convaincu,  un embauché n'hésitez pas à me contacter,  je me ferai un plaisir de vous répondre et pourquoi pas de vous rencontrer.",
-            "Passionné par la technologie et le développement, j'aime m'investir dans un projet et réaliser un travail de qualité."
+            "Si ce site vous a convaincu à m'enbaucher n'hésitez pas à me contacter,  je me ferai un plaisir de vous répondre et pourquoi pas de vous rencontrer.",
           ],
         }, 
         name: "Alex PAWLONSKI",
