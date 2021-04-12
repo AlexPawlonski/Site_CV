@@ -36,7 +36,6 @@ import logoLinkeDin from './img/logo/logoLinkeDin.png'
 
 /**import img fond-PP */
 import imgFondHeader from './img/imgFond/bg-homepage.PNG';
-import fondImg from './img/imgFond/fondRose.jpg';
 import imgP from './img/PhotoDeProfile.PNG';
 
 /**INPORT IMG PORTFOLIO */
@@ -76,10 +75,6 @@ import Footer from './components/organism/Footer.js';
 
 
 function App() {
-
-  var sectionStyle = {
-    backgroundImage: `url(${fondImg})`,
-  };
 
   return (
     <div id="wrapper"  className="App flex flex-col my-0 mx-auto bg-fixed bg-cover bg-gradient-to-b from-red-600 to-purple-800">
