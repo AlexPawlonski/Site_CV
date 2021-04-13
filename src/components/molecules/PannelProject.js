@@ -18,7 +18,7 @@ return(
                     <Title type="h2" data={data.title}/>
                 </div>
                 <div className="pb-1">
-                   <Title type="h3" data={data.subTitle}/> 
+                    <Title type="h3" data={data.subTitle}/> 
                 </div>
             </div>
         </div>

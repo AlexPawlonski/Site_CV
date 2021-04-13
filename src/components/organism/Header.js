@@ -16,14 +16,16 @@ export const Header = ({ data , ...props }) => {
   }
   return (
     <header id="home" style={sectionStyle} className="md:bg-cover h-screen mb-20 bg-no-repeat">
-      <div className="float-left m-2" style={{zIndex:"200"}}>
+      <div className="float-left m-2 fixed transform hover:scale-105 duration-100" style={{zIndex:"200"}}>
         <DlButton data="Télécharger le CV"/>
       </div>
       <Parallax y={[0, 100]}>
         <div className="w-full flex flex-col items-center">
           <Img type="user" data={data.ProfilImg}/>
-          <Title type="h1-w" data={data.name}/>
-          <div className="bg-white px-3 py-1 rounded-lg">
+          <div className="m-3">
+            <Title type="h1-w" data={data.name}/>
+          </div>
+          <div className="bg-white px-5 py-1 rounded-lg">
             <Title type="h3-red" data={data.subTitle}/>
           </div>  
         </div>

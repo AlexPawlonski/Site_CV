@@ -45,19 +45,19 @@ if (data) {
             <div className="">
               <SlideShow data={data.dataProject.carouselImg}/>
             </div>
-            <div className="sm:flex justify-around ml-auto mr-auto mt-2">
-                <div className="mx-2 w-full">
-                    <div className="border-gray-600 border-b pb-1 ">
+            <div className="sm:flex justify-around ml-auto mr-auto mt-4">
+                <div className="mx-2 flex flex-wrap content-between">
+                    <div>
                         <div className="pb-2">
                           <Title type="h2" data={"Travail réalisé sur le projet"} />  
                         </div>
-                        <div>
+                        <div className="pb-4">
                             {data.dataProject.desc.map( data => <p className="p-1">{data}</p>)}
                         </div>
                     </div>
-                    <ul>
+                    <ul  className="border-gray-600 border-t py-4 w-full flex flex-col content-around">
                         {data.dataProject.tabWork.map( data => <li className="flex items-center my-1"><FontAwesomeIcon className="m-1 text-xl" icon={faBusinessTime}/> <p className="ml-2">{data}</p> </li>)}
-                    </ul>
+                    </ul> 
                 </div>
                 <div className="mx-2 sm:w-8/12 ">
                     <Title type="h2" data={"Infos du projet"} />

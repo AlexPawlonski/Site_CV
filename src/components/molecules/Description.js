@@ -32,10 +32,9 @@ export const Description = ({ data, view, ...props }) => {
         </Desc>
         <div open={open} style={sectionStyle} onClick={() => setOpen(!open)} className="flex justify-center border-gray-300 border-t-2">
           <Anim open={open} className="cursor-pointer mt-2">
-            <FontAwesomeIcon icon={faArrowCircleDown } className=" text-2xl"/>
+            <FontAwesomeIcon icon={faArrowCircleDown } className=" text-2xl "/>
           </Anim>
         </div>
-        
       </div>
     )
   }else{

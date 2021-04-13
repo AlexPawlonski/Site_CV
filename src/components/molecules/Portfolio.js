@@ -12,7 +12,7 @@ export const Portfolio = ({ data , ...props }) => {
   }
 
 return(
-  <div className="flex flex-col justify-center pb-6">
+  <div className="flex flex-col justify-center pb-8">
     <div className="w-full">
       <InfoProject data={info} fClosePopUp={closePopUp}/>
     </div>

@@ -10,7 +10,7 @@ return(
       </div>
       <div className="flex flex-col md:flex-row justify-center font-bold text-lg">
         {data.dataSlide.textSlide.map( data => 
-          <div className="m-5 md:w-1/3">
+          <div className="m-5 md:w-1/3 ">
             <Title type="h3-w" data={data.title}/>
             <div>
               <p>{data.text}</p>
