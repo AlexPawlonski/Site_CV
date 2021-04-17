@@ -95,30 +95,30 @@ function App() {
           value:"home"
         },
         {
-          name:"Présentation",
+          name:"Qui suis-je ?",
           value:"info"
         },
         {
-          name:"Mon Parcours et expérience",
+          name:"Mon parcours et mes expériences",
           value:"course"
         },
         {
-          name:"Compétence",
+          name:"Mes compétences",
           value:"skill"
         },
         {
-          name:"Mes réalisation",
+          name:"Mes réalisations",
           value:"portfolio"
         },
         {
-          name:"Contact",
+          name:"Me contacter",
           value:"contact"
         },
       ]} />
 
       <Main data={[
         {
-          title:"Présentation",
+          title:"Qui suis-je ?",
           value:"info",
           color: "red",
           id: 0,
@@ -127,21 +127,21 @@ function App() {
             textSlide:[
               {
                 title: 'PASSIONÉ',
-                text: 'Depuis mon enfance je suis passionné par les nouvelles technologies et l\'informatique et depuis peu par le développement mais aussi la réalité virtuelle.  un domaine dans lequel j\'aimerais travailler dans le futur.'
+                text: 'Depuis mon enfance je suis passionné par les nouvelles technologies et l\'informatique. Un domaine dans lequel je souhaite intégrer une structure qui me permettra de totalement m’épanouir, et d’aider audéveloppement de celle-ci.'
               },
               {
                 title: 'CURIEUX',
-                text: 'Je pense que pour un développeur,  le trait de caractère le plus important est la curiosité.  Car elle permet de développer ses compétences, mais aussi de proposer un travail toujours à jour par rapport aux dernières technologies.'
+                text: 'Je pense que les traits de caractère les plus important pour un développeur sont la rigueur et bien sur la curiosité. Car ils permettent de développer ses compétences, et également de proposer un travail toujours à jour par rapport aux dernières technologies.'
               }, 
               {
                 title: 'TRAVAILLEUR',
-                text: 'Que ce soit pour moi-même ou pour tiers un  quand un projet me tient à cœur, je mets toujours un point d\'honneur à le mener à terme.'
+                text: 'Que ce soit pour moi-même ou pour un tiers, quand un projet me tient à cœur. Je mets toujours un point d\'honneur à le mener à terme.'
               } 
             ]
           } 
         },
         {
-          title:"Mon Parcours et expérience",
+          title:"Mon parcours et mes expériences",
           value:"course",
           id: 1,
           dataSection:{
@@ -158,9 +158,9 @@ function App() {
                 view: true,
                 desc: [ 
                   "J'ai réalisé un stage de fin d'études dans l'entreprise CodingWeb durée de 2 mois, dans lequel j'ai travaillé sur deux projets :",
-                  "- Un projet nommé BluEx, qui consistait à mettre à jour technologiquement une plate-forme destinée à des professionnels pour gérer des événements ou des salons. J'ai donc travaillé sur un environnement utilisant le framework Meteor JS, dans lequel je devais insérer des composants React pour convertir progressivement les différentes parties de la plate-forme.",
-                  "- L'autre projet sur lequel j'ai travaillé durant mon stage et qui m'a donné la maîtrise de la bibliothèque Tailwind css, a été sur la mise à jour visuelle du site Meethem.fr.",
-                  "Dans lequel je devais d'abord mettre à jour le framework Meteor JS de sa version datant de 2015 la dernière version sortie en 2020. Une fois la mise à jour effectuée, j'ai eu mission de remplacer l'intégralité de la mise en page et des styles géré par Bootstrap par une version plus moderne et plus optimiser utilisant Tailwind css.",
+                  "- Un projet nommé BluEx, qui consistait à mettre à jour technologiquement une plate-forme destinée à des professionnels pour gérer des événements ou des salons. Le projet utilisait le framework Meteor JS, sur lequel je devais y insérer des composants React pour convertir progressivement les différentes parties de la plate-forme d'une technologie a l'autre.",
+                  "- L'autre projet sur lequel j'ai travaillé durant mon stage et qui m'a donné la maîtrise de la bibliothèque Tailwind css,a porté sur la mise à jour visuelle du site Meethem.fr.",
+                  "Projet sur lequel je devais d'abord mettre à jour le framework Meteor JS de sa version datant de 2015 la dernière version sortie en 2020. Une fois la mise à jour effectuée, j'ai eu pour mission de remplacer l'intégralité de la mise en page et des styles gérés par Bootstrap par une version plus moderne et plus optimisée utilisant Tailwind css.",
                 ], 
                 link: "https://www.codingweb.fr/",
               },
@@ -173,9 +173,8 @@ function App() {
                 title: "CEFii - L'Ecole Supérieure du Web",
                 date: "2020 - 2021",
                 map: "Angers, Pays de la Loire",
-                view: true,
                 desc: [ 
-                  "Tout au long de ma formation de développeur, j'ai réalisé différents projets visant à m'enseigner les différents aspects du métier de développeur Web. Mais aussi à développer mes capacités pour travailler en équipe ou pour en diriger une.",
+                  "Tout au long de ma formation de développeur, j'ai réalisé différents projets visant à m'enseigner les différents aspects du métier de développeur Web. Mais aussi à développer mes capacités pour travailler en équipe ou pour me permettre d’en diriger une.",
                  ], 
                 link: "https://cefii.fr/",
               },
@@ -189,7 +188,7 @@ function App() {
                 date: "2017 - 2018",
                 map: "Angers, Pays de la Loire",
                 desc: [ 
-                  "Arrêter au bout d'un an pour apprendre le développement en autodidacte.",
+                  "J'ai arrêté le BTS au bout d'un an, car je ne me retrouverai pas dans le travail et l'apprentissage. Mais surtout dans les perspectives d'avenir et de carrière du domaine vers lequel le BTS me dirigeait.",
                  ], 
                 link: "https://pascal.paysdelaloire.e-lyco.fr/",
               },
@@ -203,7 +202,7 @@ function App() {
                 date: "2015 - 2017",
                 map: "Angers, Pays de la Loire",
                 desc: [ 
-                  "Obtention du bac avec mention assez bien.",
+                  "J'ai obtenu mon bac avec mention assez bien, après avoir réalisé de nombreux stages dans des administrations publiques où des entreprises privées, dans le cadre du bac pro.",
                  ], 
                 link: "https://pascal.paysdelaloire.e-lyco.fr/",
               },
@@ -211,7 +210,7 @@ function App() {
           }
         },
         {
-          title:"Compétence",
+          title:"Mes compétences",
           value:"skill",
           color: "red",
           id: 2,
@@ -232,12 +231,12 @@ function App() {
                    listeSkill: "PHP - MySQL - AJAX",
                  },
                  {
-                   title: "INT2GRATION (X)HTML / CSS",
+                   title: "INTÉGRATION (X)HTML / CSS",
                    listeSkill: "Travail sans sur-couche, respectueux des standards du Web",
                  },
                  {
                    title: "DYNAMISE DES PAGES PAR JAVASCRIPT / AJAX",
-                   listeSkill: "jQuery",
+                   listeSkill: "jQuery - AJAX",
                  },
                  {
                    title: "RÉFERENCEMENT NATUREL",
@@ -259,7 +258,7 @@ function App() {
                       src: imgphotoshop, 
                       alt:"logo Photoshop"
                     },
-                    lvl : 8, 
+                    lvl : 7, 
                   },
                   {
                     title: "Adobe Première pro",
@@ -267,7 +266,7 @@ function App() {
                       src: imgPremière, 
                       alt:"logo Première pro"
                     },
-                    lvl : 10, 
+                    lvl : 9, 
                   },
                   {
                     title: "OBS",
@@ -283,7 +282,7 @@ function App() {
                       src: imgClip, 
                       alt:"logo Clip studio Paint"
                     },
-                    lvl : 7, 
+                    lvl : 8, 
                   },
                 ]
               },
@@ -296,7 +295,7 @@ function App() {
                     src: imgreact, 
                     alt:"Logo React.js"
                   },
-                  lvl : 9, 
+                  lvl : 8, 
                 },
                 {
                   title: "Meteor JS",
@@ -304,7 +303,7 @@ function App() {
                     src: imgmeteor, 
                     alt:"logo meteor JS"
                   },
-                  lvl : 6, 
+                  lvl : 5, 
                 },
                 {
                   title: "Angular",
@@ -320,7 +319,7 @@ function App() {
                     src: imgwordpress, 
                     alt:"logo WordPress"
                   },
-                  lvl : 9, 
+                  lvl : 8, 
                 },
                 {
                   title: "JS",
@@ -328,7 +327,7 @@ function App() {
                     src: imgJS, 
                     alt:"logo JS"
                   },
-                  lvl : 10, 
+                  lvl : 8, 
                 },
                 {
                   title: "PHP",
@@ -336,7 +335,7 @@ function App() {
                     src: imgphp, 
                     alt:"logo PHP"
                   },
-                  lvl : 9, 
+                  lvl : 7, 
                 },
                 {
                   title: "MySQL",
@@ -344,7 +343,7 @@ function App() {
                     src: imgmysql, 
                     alt:"logo MySQL"
                   },
-                  lvl : 6, 
+                  lvl : 5, 
                 },
                 {
                   title: "MongoDB",
@@ -360,7 +359,7 @@ function App() {
                     src: imgbootstrap, 
                     alt:"logo MongoDB"
                   },
-                  lvl : 10, 
+                  lvl : 7, 
                 },
                 {
                   title: "Tailwind CSS",
@@ -376,7 +375,7 @@ function App() {
             }
         },
         {
-          title:"Mes Réalisation",
+          title:"Mes réalisations",
           value:"portfolio",
           id: 3,
           pannelProject:[
@@ -412,8 +411,8 @@ function App() {
                 date:"nov. 2020 - déc. 2020",
                 desc: [ 
                   "Sur ce projet j'ai réalisé plusieurs travaux, notamment une mise à jour graphique des composants existant ou des template FireBlaze html. Tout cela en utilisant bootstrap mais aussi du CSS classique pour les composants qui demandaient un peu plus de personnalisation.",
-                  "J'ai aussi effectué un travail assez conséquent sur la marketplace du site “Voir diapositive 3”  en créant et en paramétrant le composants filtre des produits de la boutique. ",
-                  "J'ai effectué mon travail en utilisant l'application storybook,  et en étant supervisé par mon chef d'équipe via la plate-forme Gira qui nous servait à communiquer entre membres de l'équipe mais aussi avec  les responsables du projet de l'entreprise Shepard Event.",
+                  "J'ai aussi effectué un travail assez conséquent sur la marketplace du site “Voir diapositive 3”  en créant et en paramétrant le composant filtre des produits de la boutique. ",
+                  "J'ai effectué mon travail en utilisant l'application storybook,  et supervisé par mon chef d'équipe via la plate-forme Gira qui nous servait à communiquer entre membres de l'équipe mais aussi avec  les responsables du projet de l'entreprise Shepard Event.",
                 ],
                 skill: ["Bootstrap", "HTML", "CSS", "JS", "FireBlaze template"],
                 framWork: ["React JS", "Meteor JS", "MongoDB"],
@@ -514,9 +513,9 @@ function App() {
                 client: "Projet d'étude Cefii",
                 date:"juin. 2020",
                 desc: [ 
-                  "Projet qu'un projet d'étude réalisé durant ma formation, consistant à réaliser un site  complètement animé utilisant jQuery.",
-                  "j'ai alors été amené à travailler sur la réalisation d'une page interactive “Voir diapositive numéro 2”  composé d'une reconstitution du système solaire fixe,  qui quand on clique sur les planètes présente dans la liste à sa gauche  s'anime  pour représenter leur trajectoire autour du Soleil.",
-                  "Dans ce projet en plus des animations j'ai travaillé sur une partie sécuritée “ voir diapositives 5”  Où je devais mettre en place des vérification de chant texte à l'envoi d'un formulaire.",
+                  "Projet d'étude que j’ai établi durant ma formation, consistant à réaliser un site complètement animé utilisant jQuery.",
+                  "j'ai alors été amené à travailler sur la réalisation d'une page interactive “Voir diapositive numéro 2”  composée d'une reconstitution du système solaire fixe,  qui quand on clique sur les planètes présente dans la liste à sa gauche  s'anime  pour représenter leur trajectoire autour du Soleil.",
+                  "Dans ce projet en plus des animations j'ai travaillé sur une partie sécurité “ voir diapositive 5” Où je devais mettre en place des vérifications du champ texte jusqu’à l'envoi d'un formulaire.",
                 ],
                 skill: ["HTML", "CSS", "JS", "JQuery"],
                 tabWork: ['Création du site en HTML','Animation en CSS et JS ', 'Création d\'un formulaire de contact avec test intégré'],
@@ -563,7 +562,7 @@ function App() {
                 client: "Projet d'étude Cefii",
                 date:"Juilet. 2020",
                 desc: [ 
-                  "Projet d'étude réalisé durant ma formation qui visait à nous entraîner et à nous perfectionner sur l'utilisation de MySQL et de PHP dans une structure de site web en MVC,  comportant un CRUD pour gérer les données d'une base de données.",
+                  "Projet d'étude réalisé durant ma formation qui visait à nous entraîner et à nous perfectionner sur l'utilisation de MySQL et de PHP dans une structure de site web en MVC,  comportant un CRUD pour gérer les informations d'une base de données.",
                 ],
                 skill: ["PHP", "MySql", "MVC", "HTML", "Boostrap"],
                 tabWork: ['Création de page HTML','Mise en page avec Boostrap', 'Création d\'un MVC en PHP', 'Mise en place d\'un CRUD avec des requette SQL'],
@@ -610,7 +609,7 @@ function App() {
                 client: "Projet d'étude WordPress et PHP",
                 date:"Mai. 2020",
                 desc: [ 
-                  "Projet que j'ai réalisé en équipe durant ma formation, Qui visait a entraîné et à nous apprendre la gestion d'une équipe et son management puisque nous avons chacun était amené à diriger le travail des autres sur le projet. ",
+                  "Projet que j'ai réalisé en équipe durant ma formation, Qui visait à entraîner et à nous apprendre la gestion d'une équipe et son management puisque nous devions chacun être amener à diriger le travail des autres sur le projet.",
                   "Mais aussi à faire une synthèse de tout ce que nous avions appris sur la création de thème et de plugin en PHP pour WordPress.",
                 ],        
                 skill: ["PHP", "HTML", "CSS"],
@@ -631,7 +630,7 @@ function App() {
           ],
         },
         {
-          title:"Contact",
+          title:"Me contacter",
           value:"contact",
           color: "red",
           id: 4,
@@ -679,7 +678,7 @@ function App() {
         info: {
           title: "Développeur web junior en recherche d'emploi",
           text: [
-            "Si ce site vous a convaincu à m'enbaucher n'hésitez pas à me contacter,  je me ferai un plaisir de vous répondre et pourquoi pas de vous rencontrer.",
+            "Si ce site vous a convaincu pour une future une collaboration n'hésitez pas à me contacter, je me devrai de vous répondre et de vous rencontrer au cours d’un entretien Visio que vous conviendrez à l’avance, en raison de la situation sanitaire",
           ],
         }, 
         name: "Alex PAWLONSKI",

@@ -27,7 +27,7 @@ export const Description = ({ data, view, ...props }) => {
   if(view){
     return(
       <div>
-        <Desc open={open} className="border-t-2 mt-3 pt-2 pb-5 ">
+        <Desc open={open} className="border-t-2 mt-3 pb-5 ">
           {data.map( data => <p className="my-2">{data}</p>)}
         </Desc>
         <div open={open} style={sectionStyle} onClick={() => setOpen(!open)} className="flex justify-center border-gray-300 border-t-2">
@@ -39,7 +39,7 @@ export const Description = ({ data, view, ...props }) => {
     )
   }else{
     return(
-      <div  className="border-t-2 mt-2">
+      <div  className="border-t-2 mt-2 pt-3">
         {data.map( data => <p>{data}</p>)}
       </div>
     )
