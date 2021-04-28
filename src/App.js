@@ -521,8 +521,8 @@ function App() {
                 tabWork: ['Création du site en HTML','Animation en CSS et JS ', 'Création d\'un formulaire de contact avec test intégré'],
                 link: {
                     linkWebSite: {
-                      value:"Site Web Cefii", 
-                      src: "https://cefii.fr/",
+                      value:"Repo GitHub", 
+                      src: "https://github.com/AlexPawlonski/ProjetSiteEspace",
                     },
                     linkAuthor: {
                       value:"Site Web Alex PAWLONSKI ", 
@@ -579,7 +579,7 @@ function App() {
               }
             },
             {
-              title: "Site vitrin fleuriste",
+              title: "Site vitrine fleuriste",
               subTitle: "Création d'un theme WordPress en PHP",
               id:"p5",
               img: {
@@ -621,8 +621,8 @@ function App() {
                     src: "https://cefii.fr/",
                   },
                   linkAuthor: {
-                    value:"Alex PAWLONSKI", 
-                    src: "https://www.linkedin.com/in/alex-pawlonski-4b38381b2/",
+                    value:"Repo GitHub", 
+                    src: "https://github.com/AlexPawlonski/ProjetWPFleuriste",
                   },
                 }
               }
